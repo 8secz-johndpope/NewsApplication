@@ -15,8 +15,7 @@ class LinksViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
     }
     
     @IBAction func button(_ sender: UIBarButtonItem) {
