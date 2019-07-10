@@ -19,12 +19,6 @@ class MethodsForSideMenu {
     func transitionToNew(_ menuType: MenuType, uiView: UIViewController) {
         Properties.shared.topView?.removeFromSuperview()
         switch menuType {
-        case .profile:
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
-            uiView.view.addSubview(vc.view)
-            Properties.shared.topView = vc.view
-            uiView.addChild(vc)
         case .news:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "SubsViewController")
@@ -40,6 +34,12 @@ class MethodsForSideMenu {
         case .weather:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "WeatherViewController")
+            uiView.view.addSubview(vc.view)
+            Properties.shared.topView = vc.view
+            uiView.addChild(vc)
+        case .profile:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)

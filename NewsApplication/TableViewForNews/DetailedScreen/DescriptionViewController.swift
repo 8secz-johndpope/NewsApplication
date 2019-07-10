@@ -24,8 +24,16 @@ class DescriptionViewController: UIViewController {
         titleLabel.text = titleLbl
         descriptionTextView.text = descriptionTV
         
+        
+        guard let url = URL(string: imageviewLink) else {return}
+        let data2 = try? Data(contentsOf: url)
+        
+        if let imageData = data2 {
+            imageView.image = UIImage(data: imageData)?.withRenderingMode(.alwaysOriginal)
+        }
        
     }
 
 
 }
+

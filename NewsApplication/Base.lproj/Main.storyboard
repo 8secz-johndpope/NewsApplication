@@ -101,32 +101,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description Text" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="m5k-qH-HwJ">
-                                <rect key="frame" x="20" y="169" width="374" height="200"/>
+                                <rect key="frame" x="20" y="409" width="374" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="pNY-aA-E0v"/>
+                                    <constraint firstAttribute="height" constant="200" id="gDS-PE-acc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y38-Ve-ygj">
-                                <rect key="frame" x="50" y="379" width="314" height="150"/>
+                                <rect key="frame" x="10" y="159" width="394" height="230"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="vJr-mM-I28"/>
+                                    <constraint firstAttribute="height" constant="230" id="mCn-xB-sfr"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="y38-Ve-ygj" firstAttribute="centerX" secondItem="6fu-b7-zic" secondAttribute="centerX" id="2fl-xB-gWh"/>
                             <constraint firstItem="Ul4-gr-w2R" firstAttribute="leading" secondItem="z4a-wi-d7u" secondAttribute="leading" constant="30" id="3su-Sg-vBL"/>
+                            <constraint firstItem="m5k-qH-HwJ" firstAttribute="leading" secondItem="z4a-wi-d7u" secondAttribute="leading" constant="20" id="7Bv-Wn-6MH"/>
                             <constraint firstItem="Ul4-gr-w2R" firstAttribute="top" secondItem="z4a-wi-d7u" secondAttribute="top" constant="30" id="7jj-di-jXC"/>
-                            <constraint firstItem="y38-Ve-ygj" firstAttribute="leading" secondItem="z4a-wi-d7u" secondAttribute="leading" constant="50" id="B1n-0l-48e"/>
-                            <constraint firstItem="y38-Ve-ygj" firstAttribute="top" secondItem="m5k-qH-HwJ" secondAttribute="bottom" constant="10" id="Djl-GB-bHA"/>
-                            <constraint firstItem="y38-Ve-ygj" firstAttribute="centerX" secondItem="6fu-b7-zic" secondAttribute="centerX" id="G85-HO-ond"/>
-                            <constraint firstItem="m5k-qH-HwJ" firstAttribute="top" secondItem="Ul4-gr-w2R" secondAttribute="bottom" constant="30" id="SGz-JY-1eS"/>
-                            <constraint firstItem="m5k-qH-HwJ" firstAttribute="leading" secondItem="z4a-wi-d7u" secondAttribute="leading" constant="20" id="kCP-wH-rn6"/>
+                            <constraint firstItem="y38-Ve-ygj" firstAttribute="leading" secondItem="z4a-wi-d7u" secondAttribute="leading" constant="10" id="KX4-o1-qBo"/>
+                            <constraint firstItem="m5k-qH-HwJ" firstAttribute="top" secondItem="y38-Ve-ygj" secondAttribute="bottom" constant="20" id="aXz-Ss-twa"/>
+                            <constraint firstItem="y38-Ve-ygj" firstAttribute="top" secondItem="Ul4-gr-w2R" secondAttribute="bottom" constant="20" id="dgs-ny-jIK"/>
                             <constraint firstItem="Ul4-gr-w2R" firstAttribute="centerX" secondItem="6fu-b7-zic" secondAttribute="centerX" id="pG7-3O-EIp"/>
-                            <constraint firstItem="m5k-qH-HwJ" firstAttribute="centerX" secondItem="6fu-b7-zic" secondAttribute="centerX" id="uiv-6C-WsS"/>
+                            <constraint firstItem="m5k-qH-HwJ" firstAttribute="centerX" secondItem="6fu-b7-zic" secondAttribute="centerX" id="xFx-RJ-P8e"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="z4a-wi-d7u"/>
                     </view>
