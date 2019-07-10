@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FDY-3L-xcI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IHe-w1-E3w">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,27 +32,40 @@
             </objects>
             <point key="canvasLocation" x="4658" y="-1252"/>
         </scene>
-        <!--Feed News Controller-->
-        <scene sceneID="qgB-0h-H81">
+        <!--News Feed Controller-->
+        <scene sceneID="E6I-JW-wrb">
             <objects>
-                <viewController id="vAi-qL-YWe" customClass="FeedNewsController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Zqd-kY-d9e">
+                <tableViewController storyboardIdentifier="NewsFeedController" id="Eqr-W9-FTN" customClass="NewsFeedController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kkt-Uq-73n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="qS0-A9-Ptg"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="a8g-nc-9tF">
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="OGB-Ne-wyv">
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsFeedCell" id="xr5-tc-DcL" customClass="NewsFeedCell" customModule="NewsApplication" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xr5-tc-DcL" id="0du-JT-ndQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eqr-W9-FTN" id="NHn-IT-QS0"/>
+                            <outlet property="delegate" destination="Eqr-W9-FTN" id="TpJ-MA-N9Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="gAC-pL-cPZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="uEn-CC-238">
                             <connections>
-                                <action selector="refreshNews:" destination="vAi-qL-YWe" id="DHC-j5-miX"/>
+                                <action selector="refreshButton:" destination="Eqr-W9-FTN" id="ru6-I9-4jB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bMS-3b-99f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ykv-f6-IEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1597.1014492753625" y="341.51785714285711"/>
+            <point key="canvasLocation" x="1658" y="307"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="uiy-uc-rkB">
@@ -242,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a84-1v-9uI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5568.115942028986" y="845.75892857142856"/>
+            <point key="canvasLocation" x="4658" y="846"/>
         </scene>
         <!--Logout View Controller-->
         <scene sceneID="fN2-vh-wzs">
@@ -286,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kAe-04-ekA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5568.115942028986" y="130.58035714285714"/>
+            <point key="canvasLocation" x="4658" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jpy-lE-tPh">
@@ -340,7 +353,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MxI-Y5-oRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4657.971014492754" y="845.75892857142856"/>
+            <point key="canvasLocation" x="3748" y="846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q4D-Up-DYq">
@@ -376,25 +389,25 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aUq-WJ-Jre" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4657.971014492754" y="130.58035714285714"/>
+            <point key="canvasLocation" x="3748" y="131"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="AF5-mm-4bY">
+        <scene sceneID="TNx-eG-bcP">
             <objects>
-                <navigationController storyboardIdentifier="FeedNewsController" automaticallyAdjustsScrollViewInsets="NO" id="FDY-3L-xcI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NewsFeedControllerNavigation" automaticallyAdjustsScrollViewInsets="NO" id="IHe-w1-E3w" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wf0-Ol-9Dh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SmM-16-cOm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vAi-qL-YWe" kind="relationship" relationship="rootViewController" id="teF-R6-iuH"/>
+                        <segue destination="Eqr-W9-FTN" kind="relationship" relationship="rootViewController" id="E1B-VJ-yK3"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NyF-DF-X6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eyp-6z-Xwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="862" y="342"/>
+            <point key="canvasLocation" x="906" y="307"/>
         </scene>
     </scenes>
 </document>
