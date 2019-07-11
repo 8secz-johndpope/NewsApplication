@@ -22,6 +22,8 @@
 		8714FB8022D7D9EF00B50C5E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */; };
 		8714FB8222D7DD6000B50C5E /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8122D7DD6000B50C5E /* ProfilePageViewController.swift */; };
 		8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */; };
+		8714FB8922D7FACE00B50C5E /* ExtensionForRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8822D7FACE00B50C5E /* ExtensionForRegistration.swift */; };
+		8714FB8B22D7FE6A00B50C5E /* ExtensionForAutorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */; };
 		8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343722D5DFF100342DF4 /* AppDelegate.swift */; };
 		8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343922D5DFF100342DF4 /* LogoutViewController.swift */; };
 		8767343D22D5DFF100342DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767343B22D5DFF100342DF4 /* Main.storyboard */; };
@@ -53,6 +55,8 @@
 		8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8714FB8122D7DD6000B50C5E /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
 		8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForProfileMethods.swift; sourceTree = "<group>"; };
+		8714FB8822D7FACE00B50C5E /* ExtensionForRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForRegistration.swift; sourceTree = "<group>"; };
+		8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForAutorize.swift; sourceTree = "<group>"; };
 		8767343422D5DFF100342DF4 /* NewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8767343722D5DFF100342DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8767343922D5DFF100342DF4 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
@@ -121,15 +125,15 @@
 			path = WeatherPage;
 			sourceTree = "<group>";
 		};
-		8714FB7822D7D8C600B50C5E /* RegistrationPage */ = {
+		8714FB7822D7D8C600B50C5E /* ProfilePages */ = {
 			isa = PBXGroup;
 			children = (
 				8714FB7B22D7D96900B50C5E /* PageViewController.swift */,
-				8714FB7D22D7D9E200B50C5E /* AuthorizeViewController.swift */,
-				8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */,
+				8714FB8722D7F64E00B50C5E /* RegisterPage */,
+				8714FB8622D7F5EE00B50C5E /* AutorizePage */,
 				8714FB8322D7DE0C00B50C5E /* ProfilePage */,
 			);
-			path = RegistrationPage;
+			path = ProfilePages;
 			sourceTree = "<group>";
 		};
 		8714FB8322D7DE0C00B50C5E /* ProfilePage */ = {
@@ -139,6 +143,24 @@
 				8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */,
 			);
 			path = ProfilePage;
+			sourceTree = "<group>";
+		};
+		8714FB8622D7F5EE00B50C5E /* AutorizePage */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB7D22D7D9E200B50C5E /* AuthorizeViewController.swift */,
+				8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */,
+			);
+			path = AutorizePage;
+			sourceTree = "<group>";
+		};
+		8714FB8722D7F64E00B50C5E /* RegisterPage */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */,
+				8714FB8822D7FACE00B50C5E /* ExtensionForRegistration.swift */,
+			);
+			path = RegisterPage;
 			sourceTree = "<group>";
 		};
 		8767342B22D5DFF100342DF4 = {
@@ -170,7 +192,7 @@
 				8767345E22D6236E00342DF4 /* TableViewForNews */,
 				8714FB6322D7412C00B50C5E /* SourcesMenu */,
 				8714FB7122D769B800B50C5E /* WeatherPage */,
-				8714FB7822D7D8C600B50C5E /* RegistrationPage */,
+				8714FB7822D7D8C600B50C5E /* ProfilePages */,
 				8767343B22D5DFF100342DF4 /* Main.storyboard */,
 				8767343E22D5DFF100342DF4 /* Assets.xcassets */,
 				8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */,
@@ -350,10 +372,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8714FB8B22D7FE6A00B50C5E /* ExtensionForAutorize.swift in Sources */,
 				8767345A22D6071100342DF4 /* Extension.swift in Sources */,
 				8714FB8022D7D9EF00B50C5E /* RegisterViewController.swift in Sources */,
 				8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */,
 				8714FB7522D7A47700B50C5E /* WeatherCell.swift in Sources */,
+				8714FB8922D7FACE00B50C5E /* ExtensionForRegistration.swift in Sources */,
 				8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */,
 				8767344E22D5E7C600342DF4 /* TransitionClass.swift in Sources */,
 				8714FB6122D735E900B50C5E /* ExtensionForAPI.swift in Sources */,

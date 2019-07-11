@@ -65,7 +65,7 @@ class ProfilePageViewController: UIViewController {
     }
     
     func callAlertIf() {
-        let alert = UIAlertController(title: "Provide full information", message: nil, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Provide correct information", message: nil, preferredStyle: .alert)
         let action = UIAlertAction(title: "Okay", style: .destructive, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
