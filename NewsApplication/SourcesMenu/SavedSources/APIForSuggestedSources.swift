@@ -24,25 +24,8 @@ extension SavedSourcesController {
                     guard let id = newDict["id"]?.string else {return}
                     guard let name = newDict["name"]?.string else {return}
                     self.suggestedSourcesId.append(id)
+                    print(id)
                     self.suggestedSourcesName.append(name)
-//                    var someNumber = 0
-//                    for i in self.arrayOfTitles {
-//                        if i != title {
-//                            someNumber += 1
-//                        }
-//                    }
-//                    if someNumber == self.arrayOfTitles.count {
-//                        self.arrayOfTitles.append(title)
-//                        guard let description = newDict["description"]?.string else {return}
-//                        self.arrayOfDescription.append(description)
-//                        let imageLink = newDict["urlToImage"]?.string
-//                        if imageLink == nil {
-//                            self.arrayOfImageLinks.append("no link")
-//                        } else {
-//                            self.arrayOfImageLinks.append(imageLink!)
-//                        }
-//                        someNumber = 0
-//                    }
                 }
             }
         }

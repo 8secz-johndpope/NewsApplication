@@ -86,6 +86,12 @@ class WeatherViewController: UIViewController {
                     }
                 }
             }
+            if self.weatherDate.count > 6 {
+            self.weatherDate.removeSubrange(6..<self.weatherDate.count)
+            self.weatherMain.removeSubrange(6..<self.weatherDate.count)
+            self.weatherTempMax.removeSubrange(6..<self.weatherDate.count)
+            self.weatherTempMin.removeSubrange(6..<self.weatherDate.count)
+            }
         }.resume()
         }
     }
