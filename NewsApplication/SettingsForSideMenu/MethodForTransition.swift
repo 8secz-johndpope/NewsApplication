@@ -21,13 +21,15 @@ class MethodsForSideMenu {
         switch menuType {
         case .news:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "NewsFeedControllerNavigation")
+            let vc = storyboard.instantiateViewController(withIdentifier: "NewsFeedController")
+//            uiView.dismiss(animated: true, completion: nil) //
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
         case .links:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "SavedSourcesControllerNavigation")
+            let vc = storyboard.instantiateViewController(withIdentifier: "SavedSourcesController")
+//            uiView.dismiss(animated: true, completion: nil)//
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
@@ -64,13 +66,3 @@ func openSideMenu(uiview: UIViewController) {
     uiview.present(vc, animated: true, completion: nil)
 }
 }
-
-// MARK : Instead of openSideMenu()
-
-//        guard let vc = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {return}
-//        vc.didTapMenuType = { menuType in
-//            transitionToNew(menuType, uiView: self)
-//        }
-//        vc.modalPresentationStyle = .overCurrentContext
-//        vc.transitioningDelegate = self as UIViewControllerTransitioningDelegate
-//        present(vc, animated: true, completion: nil)

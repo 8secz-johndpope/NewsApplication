@@ -21,6 +21,18 @@ extension NewsFeedController: UIViewControllerTransitioningDelegate {
     }
 }
 
+extension BlankPageController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transtion.isPresenting = true
+        return transtion
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transtion.isPresenting = false
+        return transtion
+    }
+}
 
 extension SavedSourcesController: UIViewControllerTransitioningDelegate {
     
