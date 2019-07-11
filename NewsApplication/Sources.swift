@@ -12,5 +12,7 @@ class Sources {
     static let shared = Sources()
     var arrayOfSources = ["business-insider", "independent", "mtv-news", "rbc", "reuters"]
     var arrayOfSourcesNames = ["Business Insider", "Independent", "MTV News", "RBC", "Reuters"]
+    
+    var weatherCity = "Kyiv"
 }
 
