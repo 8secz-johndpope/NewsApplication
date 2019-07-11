@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension SubsViewController: UIViewControllerTransitioningDelegate {
+extension NewsFeedController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transtion.isPresenting = true
@@ -22,7 +22,7 @@ extension SubsViewController: UIViewControllerTransitioningDelegate {
 }
 
 
-extension LinksViewController: UIViewControllerTransitioningDelegate {
+extension SavedSourcesController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transtion.isPresenting = true

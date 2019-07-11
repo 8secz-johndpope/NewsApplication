@@ -21,13 +21,13 @@ class MethodsForSideMenu {
         switch menuType {
         case .news:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "SubsViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "NewsFeedControllerNavigation")
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
         case .links:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "LinksViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "SavedSourcesControllerNavigation")
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		48D249EF3AA492B6A4859620 /* Pods_NewsApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE81922B497D81613CEE980C /* Pods_NewsApplication.framework */; };
+		8714FB6122D735E900B50C5E /* ExtensionForAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB6022D735E900B50C5E /* ExtensionForAPI.swift */; };
+		8714FB6522D7419400B50C5E /* SavedSourcesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB6422D7419400B50C5E /* SavedSourcesController.swift */; };
+		8714FB6722D7455200B50C5E /* SavedSourcesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB6622D7455200B50C5E /* SavedSourcesCell.swift */; };
+		8714FB6922D746F200B50C5E /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB6822D746F200B50C5E /* Sources.swift */; };
+		8714FB6C22D74B0500B50C5E /* APIForSuggestedSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB6B22D74B0500B50C5E /* APIForSuggestedSources.swift */; };
 		8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343722D5DFF100342DF4 /* AppDelegate.swift */; };
 		8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343922D5DFF100342DF4 /* LogoutViewController.swift */; };
 		8767343D22D5DFF100342DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767343B22D5DFF100342DF4 /* Main.storyboard */; };
@@ -28,6 +33,11 @@
 
 /* Begin PBXFileReference section */
 		47B5B4BECAD6EFDBC2B53962 /* Pods-NewsApplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApplication.debug.xcconfig"; path = "Target Support Files/Pods-NewsApplication/Pods-NewsApplication.debug.xcconfig"; sourceTree = "<group>"; };
+		8714FB6022D735E900B50C5E /* ExtensionForAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForAPI.swift; sourceTree = "<group>"; };
+		8714FB6422D7419400B50C5E /* SavedSourcesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSourcesController.swift; sourceTree = "<group>"; };
+		8714FB6622D7455200B50C5E /* SavedSourcesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSourcesCell.swift; sourceTree = "<group>"; };
+		8714FB6822D746F200B50C5E /* Sources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
+		8714FB6B22D74B0500B50C5E /* APIForSuggestedSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIForSuggestedSources.swift; sourceTree = "<group>"; };
 		8767343422D5DFF100342DF4 /* NewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8767343722D5DFF100342DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8767343922D5DFF100342DF4 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +81,24 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8714FB6322D7412C00B50C5E /* SourcesMenu */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB6A22D749CC00B50C5E /* SavedSources */,
+			);
+			path = SourcesMenu;
+			sourceTree = "<group>";
+		};
+		8714FB6A22D749CC00B50C5E /* SavedSources */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB6422D7419400B50C5E /* SavedSourcesController.swift */,
+				8714FB6622D7455200B50C5E /* SavedSourcesCell.swift */,
+				8714FB6B22D74B0500B50C5E /* APIForSuggestedSources.swift */,
+			);
+			path = SavedSources;
+			sourceTree = "<group>";
+		};
 		8767342B22D5DFF100342DF4 = {
 			isa = PBXGroup;
 			children = (
@@ -100,10 +128,12 @@
 				8767343922D5DFF100342DF4 /* LogoutViewController.swift */,
 				8767345D22D6107A00342DF4 /* SettingsForSideMenu */,
 				8767345E22D6236E00342DF4 /* TableViewForNews */,
+				8714FB6322D7412C00B50C5E /* SourcesMenu */,
 				8767343B22D5DFF100342DF4 /* Main.storyboard */,
 				8767343E22D5DFF100342DF4 /* Assets.xcassets */,
 				8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */,
 				8767344322D5DFF100342DF4 /* Info.plist */,
+				8714FB6822D746F200B50C5E /* Sources.swift */,
 			);
 			path = NewsApplication;
 			sourceTree = "<group>";
@@ -132,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				8767346322D653F800342DF4 /* NewsFeedController.swift */,
+				8714FB6022D735E900B50C5E /* ExtensionForAPI.swift */,
 				8767346522D6540C00342DF4 /* NewsFeedCell.swift */,
 			);
 			path = Feed;
@@ -279,15 +310,20 @@
 				8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */,
 				8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */,
 				8767344E22D5E7C600342DF4 /* TransitionClass.swift in Sources */,
+				8714FB6122D735E900B50C5E /* ExtensionForAPI.swift in Sources */,
 				8767346622D6540C00342DF4 /* NewsFeedCell.swift in Sources */,
 				8767345C22D608D600342DF4 /* MethodForTransition.swift in Sources */,
 				8767344A22D5E12C00342DF4 /* MenuViewController.swift in Sources */,
+				8714FB6722D7455200B50C5E /* SavedSourcesCell.swift in Sources */,
 				8767345222D5F67500342DF4 /* SubsViewController.swift in Sources */,
 				8767345622D6031200342DF4 /* WeatherViewController.swift in Sources */,
 				8767345422D5FE4100342DF4 /* LinksViewController.swift in Sources */,
+				8714FB6922D746F200B50C5E /* Sources.swift in Sources */,
+				8714FB6522D7419400B50C5E /* SavedSourcesController.swift in Sources */,
 				8767345822D6032600342DF4 /* ProfileViewController.swift in Sources */,
 				8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */,
 				8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */,
+				8714FB6C22D74B0500B50C5E /* APIForSuggestedSources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
