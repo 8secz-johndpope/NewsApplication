@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IfX-6A-cgZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bUk-wp-Sb6">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -117,6 +117,247 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wpJ-Nt-Btd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1320" y="131"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="0s6-aP-3e6">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Ssx-b3-U6X" customClass="PageViewController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDH-Ph-0Qo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4519" y="-988"/>
+        </scene>
+        <!--Profile Page View Controller-->
+        <scene sceneID="4eA-Z9-gYi">
+            <objects>
+                <viewController storyboardIdentifier="ProfilePageViewController" id="bUk-wp-Sb6" customClass="ProfilePageViewController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zmc-yj-yra">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7p-Sv-SXj">
+                                <rect key="frame" x="20" y="74" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XlF-4g-u6R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZn-Wa-XxO">
+                                <rect key="frame" x="20" y="164" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2to-Be-hWD"/>
+                                    <constraint firstAttribute="width" constant="150" id="MpN-0R-aIp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33p-zV-Rfw">
+                                <rect key="frame" x="20" y="234" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="c7L-sV-4RV"/>
+                                    <constraint firstAttribute="height" constant="40" id="sKY-qd-ttt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7m-km-SDQ">
+                                <rect key="frame" x="20" y="304" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="YPL-V6-Vmu"/>
+                                    <constraint firstAttribute="height" constant="40" id="hMY-Pn-YNP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of Birth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVg-fe-XGB">
+                                <rect key="frame" x="20" y="374" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0Bk-bZ-U6z"/>
+                                    <constraint firstAttribute="width" constant="150" id="mbK-lD-tyb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfj-g0-PR2">
+                                <rect key="frame" x="20" y="444" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="KbS-2Y-ASC"/>
+                                    <constraint firstAttribute="height" constant="40" id="esn-CQ-U7G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKw-In-JOY">
+                                <rect key="frame" x="20" y="514" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="L1h-ff-vwl"/>
+                                    <constraint firstAttribute="width" constant="150" id="bo4-9d-Cea"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R94-RV-PTI">
+                                <rect key="frame" x="194" y="164" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PTA-f8-HFJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="odl-YE-B3D"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gpt-NA-Xhd">
+                                <rect key="frame" x="194" y="234" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="EOb-7h-F28"/>
+                                    <constraint firstAttribute="height" constant="40" id="Smu-wq-esU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8vb-9B-wv4">
+                                <rect key="frame" x="194" y="304" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4u2-J9-cVJ"/>
+                                    <constraint firstAttribute="height" constant="40" id="WuH-nd-e1w"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e32-wD-5HT">
+                                <rect key="frame" x="244" y="374" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GyW-SU-X3B"/>
+                                    <constraint firstAttribute="width" constant="150" id="YUC-70-4GD"/>
+                                </constraints>
+                                <state key="normal" title="01.01.2001"/>
+                                <connections>
+                                    <action selector="dateOfBirthButton:" destination="bUk-wp-Sb6" eventType="touchUpInside" id="ffO-Kr-r1s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-ib-uVn">
+                                <rect key="frame" x="244" y="444" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2nn-D4-V74"/>
+                                    <constraint firstAttribute="width" constant="150" id="dfi-S0-oCk"/>
+                                </constraints>
+                                <state key="normal" title="Ukraine"/>
+                                <connections>
+                                    <action selector="countryButton:" destination="bUk-wp-Sb6" eventType="touchUpInside" id="g2Q-DN-m6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7e-he-0lO">
+                                <rect key="frame" x="244" y="514" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cjq-Xp-Dgv"/>
+                                    <constraint firstAttribute="width" constant="150" id="ssD-nG-f1m"/>
+                                </constraints>
+                                <state key="normal" title="Kiev"/>
+                                <connections>
+                                    <action selector="cityButton:" destination="bUk-wp-Sb6" eventType="touchUpInside" id="LnO-R3-Q48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XY6-QH-fxR">
+                                <rect key="frame" x="100" y="662" width="214" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="051-Sd-UIX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
+                                <state key="normal" title="APPLY">
+                                    <color key="titleColor" red="0.67973199390000005" green="0.54960210570000001" blue="0.81981622899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="applyButton:" destination="bUk-wp-Sb6" eventType="touchUpInside" id="yn7-tD-mH5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R94-RV-PTI" firstAttribute="top" secondItem="y7p-Sv-SXj" secondAttribute="bottom" constant="50" id="3vD-S2-sYv"/>
+                            <constraint firstItem="33p-zV-Rfw" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="42h-AD-vBw"/>
+                            <constraint firstItem="e32-wD-5HT" firstAttribute="top" secondItem="8vb-9B-wv4" secondAttribute="bottom" constant="30" id="5tL-JL-d9a"/>
+                            <constraint firstItem="iVg-fe-XGB" firstAttribute="top" secondItem="B7m-km-SDQ" secondAttribute="bottom" constant="30" id="8wX-1d-Stb"/>
+                            <constraint firstItem="XY6-QH-fxR" firstAttribute="centerX" secondItem="Zmc-yj-yra" secondAttribute="centerX" id="95X-Rd-HgY"/>
+                            <constraint firstItem="yKw-In-JOY" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="G9r-F3-ml0"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="trailing" secondItem="e32-wD-5HT" secondAttribute="trailing" constant="20" id="H10-fB-xUY"/>
+                            <constraint firstItem="B7m-km-SDQ" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="IhK-AP-66s"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="trailing" secondItem="q7e-he-0lO" secondAttribute="trailing" constant="20" id="ItU-Fg-mwp"/>
+                            <constraint firstItem="q7e-he-0lO" firstAttribute="top" secondItem="JyY-ib-uVn" secondAttribute="bottom" constant="30" id="JOT-rQ-u8f"/>
+                            <constraint firstItem="y7p-Sv-SXj" firstAttribute="centerX" secondItem="Zmc-yj-yra" secondAttribute="centerX" id="Jh6-cn-LX5"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="trailing" secondItem="JyY-ib-uVn" secondAttribute="trailing" constant="20" id="Kr3-vT-1Yj"/>
+                            <constraint firstItem="yKw-In-JOY" firstAttribute="top" secondItem="Zfj-g0-PR2" secondAttribute="bottom" constant="30" id="MgN-RZ-K2N"/>
+                            <constraint firstItem="y7p-Sv-SXj" firstAttribute="top" secondItem="KCm-r8-hUZ" secondAttribute="top" constant="30" id="SKo-bb-ZTo"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="trailing" secondItem="8vb-9B-wv4" secondAttribute="trailing" constant="20" id="VHZ-jo-i7R"/>
+                            <constraint firstItem="Zfj-g0-PR2" firstAttribute="top" secondItem="iVg-fe-XGB" secondAttribute="bottom" constant="30" id="Wcg-CI-wWg"/>
+                            <constraint firstItem="XY6-QH-fxR" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="100" id="ZXb-xa-1zt"/>
+                            <constraint firstItem="8vb-9B-wv4" firstAttribute="top" secondItem="Gpt-NA-Xhd" secondAttribute="bottom" constant="30" id="Zci-IC-L64"/>
+                            <constraint firstItem="33p-zV-Rfw" firstAttribute="top" secondItem="aZn-Wa-XxO" secondAttribute="bottom" constant="30" id="biT-cd-VHK"/>
+                            <constraint firstItem="B7m-km-SDQ" firstAttribute="top" secondItem="33p-zV-Rfw" secondAttribute="bottom" constant="30" id="db8-Ey-pWG"/>
+                            <constraint firstItem="aZn-Wa-XxO" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="eoL-lJ-pNs"/>
+                            <constraint firstItem="iVg-fe-XGB" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="gtI-eK-C5P"/>
+                            <constraint firstItem="Zfj-g0-PR2" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="hma-va-Q4F"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="trailing" secondItem="Gpt-NA-Xhd" secondAttribute="trailing" constant="20" id="kBp-mV-b5O"/>
+                            <constraint firstItem="aZn-Wa-XxO" firstAttribute="top" secondItem="y7p-Sv-SXj" secondAttribute="bottom" constant="50" id="p1F-u5-ReD"/>
+                            <constraint firstItem="Gpt-NA-Xhd" firstAttribute="top" secondItem="R94-RV-PTI" secondAttribute="bottom" constant="30" id="qHG-ps-UF7"/>
+                            <constraint firstItem="JyY-ib-uVn" firstAttribute="top" secondItem="e32-wD-5HT" secondAttribute="bottom" constant="30" id="spT-SW-cQN"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="trailing" secondItem="R94-RV-PTI" secondAttribute="trailing" constant="20" id="xMn-Vn-grV"/>
+                            <constraint firstItem="y7p-Sv-SXj" firstAttribute="leading" secondItem="KCm-r8-hUZ" secondAttribute="leading" constant="20" id="xse-Y6-GcM"/>
+                            <constraint firstItem="KCm-r8-hUZ" firstAttribute="bottom" secondItem="XY6-QH-fxR" secondAttribute="bottom" constant="150" id="yzi-Ye-DZR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KCm-r8-hUZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityButtonOutlet" destination="q7e-he-0lO" id="mW9-nS-em6"/>
+                        <outlet property="countryButtonOutlet" destination="JyY-ib-uVn" id="B2l-uJ-FiT"/>
+                        <outlet property="dateOfBirthButtonOutlet" destination="e32-wD-5HT" id="70A-9g-Y3G"/>
+                        <outlet property="firstNameTF" destination="R94-RV-PTI" id="zyZ-ZD-bmb"/>
+                        <outlet property="phoneNumberTF" destination="8vb-9B-wv4" id="2Fp-ex-Fxs"/>
+                        <outlet property="secondNameTF" destination="Gpt-NA-Xhd" id="YG8-0c-qAd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yT9-j7-kBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4520" y="-281"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="leB-Ym-2mY">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="UFz-b6-doD" customClass="RegisterViewController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pId-Fu-10o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.75786672929999999" green="0.81981622899999995" blue="0.33006443930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8N7-wa-aAw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSn-Qt-zc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3652" y="-988"/>
+        </scene>
+        <!--Authorize View Controller-->
+        <scene sceneID="H9T-hO-9D0">
+            <objects>
+                <viewController storyboardIdentifier="AuthorizeViewController" id="UQm-Uz-qTz" customClass="AuthorizeViewController" customModule="NewsApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JPB-0N-nSA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.52517358059999997" green="0.49366674919999998" blue="0.81981622899999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Yh1-y8-Mts"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17Z-ri-jr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2914" y="-988"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="uiy-uc-rkB">
@@ -262,7 +503,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHQ-Fh-jHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1451" y="-571"/>
+            <point key="canvasLocation" x="-1406" y="-27"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="i3a-iw-gCC">
@@ -364,7 +605,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0a-MB-NSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="-571"/>
+            <point key="canvasLocation" x="490" y="-623"/>
         </scene>
         <!--Saved Sources Controller-->
         <scene sceneID="Fzo-5D-EGh">
@@ -421,7 +662,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nXY-mn-5yy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="846"/>
+            <point key="canvasLocation" x="-348" y="961"/>
         </scene>
         <!--Weather View Controller-->
         <scene sceneID="myD-yB-iMl">
@@ -527,7 +768,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0c-nY-Rqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766.6666666666667" y="845.75892857142856"/>
+            <point key="canvasLocation" x="745" y="961"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ERT-g3-Aq0">
@@ -545,7 +786,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="79c-bh-mEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-450.72463768115944" y="-571.20535714285711"/>
+            <point key="canvasLocation" x="-299" y="-623"/>
         </scene>
     </scenes>
 </document>

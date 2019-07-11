@@ -17,6 +17,11 @@
 		8714FB7322D769D600B50C5E /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7222D769D600B50C5E /* WeatherViewController.swift */; };
 		8714FB7522D7A47700B50C5E /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7422D7A47700B50C5E /* WeatherCell.swift */; };
 		8714FB7722D7A4DD00B50C5E /* ExtensionForWeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7622D7A4DD00B50C5E /* ExtensionForWeatherVC.swift */; };
+		8714FB7C22D7D96900B50C5E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7B22D7D96900B50C5E /* PageViewController.swift */; };
+		8714FB7E22D7D9E200B50C5E /* AuthorizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7D22D7D9E200B50C5E /* AuthorizeViewController.swift */; };
+		8714FB8022D7D9EF00B50C5E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */; };
+		8714FB8222D7DD6000B50C5E /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8122D7DD6000B50C5E /* ProfilePageViewController.swift */; };
+		8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */; };
 		8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343722D5DFF100342DF4 /* AppDelegate.swift */; };
 		8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343922D5DFF100342DF4 /* LogoutViewController.swift */; };
 		8767343D22D5DFF100342DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767343B22D5DFF100342DF4 /* Main.storyboard */; };
@@ -43,6 +48,11 @@
 		8714FB7222D769D600B50C5E /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8714FB7422D7A47700B50C5E /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		8714FB7622D7A4DD00B50C5E /* ExtensionForWeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForWeatherVC.swift; sourceTree = "<group>"; };
+		8714FB7B22D7D96900B50C5E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		8714FB7D22D7D9E200B50C5E /* AuthorizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizeViewController.swift; sourceTree = "<group>"; };
+		8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8714FB8122D7DD6000B50C5E /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
+		8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForProfileMethods.swift; sourceTree = "<group>"; };
 		8767343422D5DFF100342DF4 /* NewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8767343722D5DFF100342DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8767343922D5DFF100342DF4 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +121,26 @@
 			path = WeatherPage;
 			sourceTree = "<group>";
 		};
+		8714FB7822D7D8C600B50C5E /* RegistrationPage */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB7B22D7D96900B50C5E /* PageViewController.swift */,
+				8714FB7D22D7D9E200B50C5E /* AuthorizeViewController.swift */,
+				8714FB7F22D7D9EF00B50C5E /* RegisterViewController.swift */,
+				8714FB8322D7DE0C00B50C5E /* ProfilePage */,
+			);
+			path = RegistrationPage;
+			sourceTree = "<group>";
+		};
+		8714FB8322D7DE0C00B50C5E /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB8122D7DD6000B50C5E /* ProfilePageViewController.swift */,
+				8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */,
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
 		8767342B22D5DFF100342DF4 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +170,7 @@
 				8767345E22D6236E00342DF4 /* TableViewForNews */,
 				8714FB6322D7412C00B50C5E /* SourcesMenu */,
 				8714FB7122D769B800B50C5E /* WeatherPage */,
+				8714FB7822D7D8C600B50C5E /* RegistrationPage */,
 				8767343B22D5DFF100342DF4 /* Main.storyboard */,
 				8767343E22D5DFF100342DF4 /* Assets.xcassets */,
 				8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */,
@@ -273,6 +304,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NewsApplication/Pods-NewsApplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -280,6 +312,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -318,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8767345A22D6071100342DF4 /* Extension.swift in Sources */,
+				8714FB8022D7D9EF00B50C5E /* RegisterViewController.swift in Sources */,
 				8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */,
 				8714FB7522D7A47700B50C5E /* WeatherCell.swift in Sources */,
 				8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */,
@@ -328,13 +362,17 @@
 				8767344A22D5E12C00342DF4 /* MenuViewController.swift in Sources */,
 				8714FB6722D7455200B50C5E /* SavedSourcesCell.swift in Sources */,
 				8714FB6922D746F200B50C5E /* Sources.swift in Sources */,
+				8714FB7E22D7D9E200B50C5E /* AuthorizeViewController.swift in Sources */,
+				8714FB7C22D7D96900B50C5E /* PageViewController.swift in Sources */,
 				8714FB6522D7419400B50C5E /* SavedSourcesController.swift in Sources */,
 				8714FB7722D7A4DD00B50C5E /* ExtensionForWeatherVC.swift in Sources */,
+				8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */,
 				8714FB6E22D7643E00B50C5E /* BlankPageController.swift in Sources */,
 				8714FB7322D769D600B50C5E /* WeatherViewController.swift in Sources */,
 				8767345822D6032600342DF4 /* ProfileViewController.swift in Sources */,
 				8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */,
 				8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */,
+				8714FB8222D7DD6000B50C5E /* ProfilePageViewController.swift in Sources */,
 				8714FB6C22D74B0500B50C5E /* APIForSuggestedSources.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

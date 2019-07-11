@@ -8,4 +8,5 @@ target 'NewsApplication' do
   # Pods for NewsApplication
 pod 'Alamofire'
 pod 'SwiftyJSON', '~> 4.0'
+pod 'ActionSheetPicker-3.0', '~> 2.3.0'
 end
