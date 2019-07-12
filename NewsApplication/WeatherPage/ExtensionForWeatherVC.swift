@@ -10,7 +10,7 @@ import UIKit
 
 extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.weatherDate.count < 6 {
+        if self.weatherDate.count < 5 || self.weatherTempMax.count < 5 || self.weatherTempMin.count < 5 || self.weatherMain.count < 5 {
             return 0
         } else {
             return self.weatherDate.count
@@ -19,7 +19,7 @@ extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath) as! WeatherCell
-        if weatherDate.count < 6 {
+        if weatherDate.count < 5 || self.weatherTempMax.count < 5 || self.weatherTempMin.count < 5 || self.weatherMain.count < 5 {
             return cell
         } else {
             cell.dateLbl.text = self.weatherDate[indexPath.row]

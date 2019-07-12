@@ -31,6 +31,10 @@ extension RegisterViewController: UITextFieldDelegate {
         if pass != confirm {
             callAlertIfNotEqual()
         }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
+        present(vc, animated: true, completion: nil)
     }
     
     //MARK:

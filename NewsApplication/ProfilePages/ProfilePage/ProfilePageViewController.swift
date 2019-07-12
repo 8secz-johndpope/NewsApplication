@@ -11,6 +11,9 @@ import ActionSheetPicker_3_0
 
 class ProfilePageViewController: UIViewController {
     
+    let transtion = TransitionClass()
+    var topView: UIView?
+    
     let arrayForYears: [Int] = {
         var array = [Int]()
         var firstYear = 1969
@@ -61,7 +64,6 @@ class ProfilePageViewController: UIViewController {
         firstNameTF.delegate = self
         secondNameTF.delegate = self
         phoneNumberTF.delegate = self
-        
     }
     
     func callAlertIf() {
@@ -94,6 +96,10 @@ class ProfilePageViewController: UIViewController {
         if phoneNumberTF.text?.rangeOfCharacter(from: .letters) != nil || phoneNumber.isEmpty {
             callAlertIf()
         }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")
+        present(vc, animated: true, completion: nil)
     }
     
     

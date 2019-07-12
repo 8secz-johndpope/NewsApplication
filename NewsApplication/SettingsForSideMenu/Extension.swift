@@ -60,7 +60,7 @@ extension WeatherViewController: UIViewControllerTransitioningDelegate {
     }
 }
 
-extension ProfileViewController: UIViewControllerTransitioningDelegate {
+extension ProfilePageViewController: UIViewControllerTransitioningDelegate {
     
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transtion.isPresenting = true

@@ -41,7 +41,7 @@ class MethodsForSideMenu {
             uiView.addChild(vc)
         case .profile:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "ProfileViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
