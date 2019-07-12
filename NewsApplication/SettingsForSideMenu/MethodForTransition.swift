@@ -47,10 +47,11 @@ class MethodsForSideMenu {
             uiView.addChild(vc)
         case .logout:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "LogoutViewController")
-            uiView.view.addSubview(vc.view)
-            Properties.shared.topView = vc.view
-            uiView.addChild(vc)
+            let vc = storyboard.instantiateViewController(withIdentifier: "PageViewController")
+            uiView.present(vc, animated: true, completion: nil)
+//            uiView.view.addSubview(vc.view)
+//            Properties.shared.topView = vc.view
+//            uiView.addChild(vc)
         }
     }
 

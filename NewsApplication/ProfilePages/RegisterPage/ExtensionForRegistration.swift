@@ -33,31 +33,27 @@ extension RegisterViewController: UITextFieldDelegate {
         
         if pass != confirm {
             callAlertIfNotEqual()
-        }
-        
-        Auth.auth().createUser(withEmail: email, password: pass) { (result, err) in
-            if err == nil {
-                
-                let securityData: [String: String] = ["email": email, "pass": pass]
-                let key = email.replacingOccurrences(of: ".", with: "")
-                self.reference.child("UsersDB").child(key).setValue(securityData) { (error, refer) in
-                    if error == nil {
-                        let key = email.replacingOccurrences(of: ".", with: "")
-                        UserData.shared.email = key
-                        UserData.shared.password = pass
-                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
-                        self.present(vc, animated: true, completion: nil)
-                        print("Save  to UsersDB succeeded")
-                    } else {
-                        print(" failed to save to UsersDB")
+        } else {
+            Auth.auth().createUser(withEmail: email, password: pass) { (result, err) in
+                if err == nil {
+                    let securityData: [String: String] = ["email": email, "pass": pass]
+                    let key = email.replacingOccurrences(of: ".", with: "")
+                    self.reference.child("UsersDB").child(key).setValue(securityData) { (error, refer) in
+                        if error == nil {
+                            let key = email.replacingOccurrences(of: ".", with: "")
+                            UserData.shared.email = key
+                            UserData.shared.password = pass
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
+                            self.present(vc, animated: true, completion: nil)
+                            print("Save to UsersDB succeeded")
+                        } else {
+                            print("failed to save to UsersDB")
+                        }
                     }
+                } else {
+                    print("register failure")
                 }
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
-//                self.present(vc, animated: true, completion: nil)
-            } else {
-                print("register failure")
             }
         }
     }

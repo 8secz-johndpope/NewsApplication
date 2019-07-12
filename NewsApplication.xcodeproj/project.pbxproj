@@ -25,19 +25,19 @@
 		8714FB8922D7FACE00B50C5E /* ExtensionForRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8822D7FACE00B50C5E /* ExtensionForRegistration.swift */; };
 		8714FB8B22D7FE6A00B50C5E /* ExtensionForAutorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */; };
 		8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343722D5DFF100342DF4 /* AppDelegate.swift */; };
-		8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343922D5DFF100342DF4 /* LogoutViewController.swift */; };
 		8767343D22D5DFF100342DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767343B22D5DFF100342DF4 /* Main.storyboard */; };
 		8767343F22D5DFF100342DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8767343E22D5DFF100342DF4 /* Assets.xcassets */; };
 		8767344222D5DFF100342DF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */; };
 		8767344A22D5E12C00342DF4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767344922D5E12C00342DF4 /* MenuViewController.swift */; };
 		8767344E22D5E7C600342DF4 /* TransitionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767344D22D5E7C600342DF4 /* TransitionClass.swift */; };
-		8767345822D6032600342DF4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767345722D6032600342DF4 /* ProfileViewController.swift */; };
 		8767345A22D6071100342DF4 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767345922D6071100342DF4 /* Extension.swift */; };
 		8767345C22D608D600342DF4 /* MethodForTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767345B22D608D600342DF4 /* MethodForTransition.swift */; };
 		8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346322D653F800342DF4 /* NewsFeedController.swift */; };
 		8767346622D6540C00342DF4 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346522D6540C00342DF4 /* NewsFeedCell.swift */; };
 		8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346A22D659D000342DF4 /* DescriptionViewController.swift */; };
 		87FDEFA922D87BC800F15F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */; };
+		87FDEFAD22D8AFEC00F15F77 /* ExtensionForFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */; };
+		87FDEFB022D8B1D200F15F77 /* ExtenstionForPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,20 +60,20 @@
 		8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForAutorize.swift; sourceTree = "<group>"; };
 		8767343422D5DFF100342DF4 /* NewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8767343722D5DFF100342DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8767343922D5DFF100342DF4 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		8767343C22D5DFF100342DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8767343E22D5DFF100342DF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8767344122D5DFF100342DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8767344322D5DFF100342DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8767344922D5E12C00342DF4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		8767344D22D5E7C600342DF4 /* TransitionClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionClass.swift; sourceTree = "<group>"; };
-		8767345722D6032600342DF4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8767345922D6071100342DF4 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		8767345B22D608D600342DF4 /* MethodForTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodForTransition.swift; sourceTree = "<group>"; };
 		8767346322D653F800342DF4 /* NewsFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedController.swift; sourceTree = "<group>"; };
 		8767346522D6540C00342DF4 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		8767346A22D659D000342DF4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForFirebase.swift; sourceTree = "<group>"; };
+		87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenstionForPageController.swift; sourceTree = "<group>"; };
 		BE81922B497D81613CEE980C /* Pods_NewsApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF71DE1EE1F87E68BEF2E505 /* Pods-NewsApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApplication.release.xcconfig"; path = "Target Support Files/Pods-NewsApplication/Pods-NewsApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +130,7 @@
 		8714FB7822D7D8C600B50C5E /* ProfilePages */ = {
 			isa = PBXGroup;
 			children = (
-				8714FB7B22D7D96900B50C5E /* PageViewController.swift */,
+				87FDEFAE22D8B1A700F15F77 /* LaunchPageController */,
 				8714FB8722D7F64E00B50C5E /* RegisterPage */,
 				8714FB8622D7F5EE00B50C5E /* AutorizePage */,
 				8714FB8322D7DE0C00B50C5E /* ProfilePage */,
@@ -143,6 +143,7 @@
 			children = (
 				8714FB8122D7DD6000B50C5E /* ProfilePageViewController.swift */,
 				8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */,
+				87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */,
 			);
 			path = ProfilePage;
 			sourceTree = "<group>";
@@ -187,8 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				8767343722D5DFF100342DF4 /* AppDelegate.swift */,
-				8767345722D6032600342DF4 /* ProfileViewController.swift */,
-				8767343922D5DFF100342DF4 /* LogoutViewController.swift */,
 				8714FB6D22D7643E00B50C5E /* BlankPageController.swift */,
 				8767345D22D6107A00342DF4 /* SettingsForSideMenu */,
 				8767345E22D6236E00342DF4 /* TableViewForNews */,
@@ -241,6 +240,15 @@
 				8767346A22D659D000342DF4 /* DescriptionViewController.swift */,
 			);
 			path = DetailedScreen;
+			sourceTree = "<group>";
+		};
+		87FDEFAE22D8B1A700F15F77 /* LaunchPageController */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB7B22D7D96900B50C5E /* PageViewController.swift */,
+				87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */,
+			);
+			path = LaunchPageController;
 			sourceTree = "<group>";
 		};
 		C38A9997A9402EAB2959033B /* Frameworks */ = {
@@ -387,12 +395,12 @@
 				8714FB8B22D7FE6A00B50C5E /* ExtensionForAutorize.swift in Sources */,
 				8767345A22D6071100342DF4 /* Extension.swift in Sources */,
 				8714FB8022D7D9EF00B50C5E /* RegisterViewController.swift in Sources */,
-				8767343A22D5DFF100342DF4 /* LogoutViewController.swift in Sources */,
 				8714FB7522D7A47700B50C5E /* WeatherCell.swift in Sources */,
 				8714FB8922D7FACE00B50C5E /* ExtensionForRegistration.swift in Sources */,
 				8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */,
 				8767344E22D5E7C600342DF4 /* TransitionClass.swift in Sources */,
 				8714FB6122D735E900B50C5E /* ExtensionForAPI.swift in Sources */,
+				87FDEFAD22D8AFEC00F15F77 /* ExtensionForFirebase.swift in Sources */,
 				8767346622D6540C00342DF4 /* NewsFeedCell.swift in Sources */,
 				8767345C22D608D600342DF4 /* MethodForTransition.swift in Sources */,
 				8767344A22D5E12C00342DF4 /* MenuViewController.swift in Sources */,
@@ -405,11 +413,11 @@
 				8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */,
 				8714FB6E22D7643E00B50C5E /* BlankPageController.swift in Sources */,
 				8714FB7322D769D600B50C5E /* WeatherViewController.swift in Sources */,
-				8767345822D6032600342DF4 /* ProfileViewController.swift in Sources */,
 				8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */,
 				8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */,
 				8714FB8222D7DD6000B50C5E /* ProfilePageViewController.swift in Sources */,
 				8714FB6C22D74B0500B50C5E /* APIForSuggestedSources.swift in Sources */,
+				87FDEFB022D8B1D200F15F77 /* ExtenstionForPageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
