@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class SavedSourcesController: UITableViewController {
-    
+    var reference: DatabaseReference!
     let transtion = TransitionClass()
     var topView: UIView?
     
@@ -33,8 +36,14 @@ class SavedSourcesController: UITableViewController {
         tableView.tableFooterView = UIView()
         navigationController?.navigationBar.barStyle = .default
         navigationController?.navigationBar.barTintColor = .white
+        reference = Database.database().reference()
         self.getAPI()
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        DispatchQueue.main.async {
+            self.updateSources()
+        }
     }
     
     //MARK: Settings for TableView
@@ -53,7 +62,7 @@ class SavedSourcesController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return Sources.shared.arrayOfSourcesNames.count
+            return UserData.shared.subs.count
         } else {
             return suggestedSourcesName.count
         }
@@ -64,7 +73,7 @@ class SavedSourcesController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SavedSourcesCell", for: indexPath) as! SavedSourcesCell
         if indexPath.section == 0 {
-        cell.sourceLabel.text = Sources.shared.arrayOfSourcesNames[indexPath.row]
+        cell.sourceLabel.text = UserData.shared.subs[indexPath.row]
         return cell
         } else {
             cell.sourceLabel.text = suggestedSourcesName[indexPath.row]
@@ -81,8 +90,10 @@ class SavedSourcesController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             if editingStyle == .delete {
-                Sources.shared.arrayOfSourcesNames.remove(at: indexPath.row)
-                Sources.shared.arrayOfSources.remove(at: indexPath.row)
+//                Sources.shared.arrayOfSourcesNames.remove(at: indexPath.row)
+                UserData.shared.subs.remove(at: indexPath.row)
+//                Sources.shared.arrayOfSources.remove(at: indexPath.row)
+                UserData.shared.subsId.remove(at: indexPath.row)
                 tableView.reloadData()
             }
         }
@@ -92,10 +103,9 @@ class SavedSourcesController: UITableViewController {
         if indexPath.section == 1 {
             let alert = UIAlertController(title: "Add this source to your list?", message: nil, preferredStyle: .alert)
             let action1 = UIAlertAction(title: "Yes", style: .default) { (_) in
-                Sources.shared.arrayOfSources.append(self.suggestedSourcesId[indexPath.row])
-                Sources.shared.arrayOfSourcesNames.append(self.suggestedSourcesName[indexPath.row])
+                UserData.shared.subsId.append(self.suggestedSourcesId[indexPath.row])
+                UserData.shared.subs.append(self.suggestedSourcesName[indexPath.row])
                 tableView.reloadData()
-                print(Sources.shared.arrayOfSourcesNames)
             }
             let action2 = UIAlertAction(title: "No", style: .destructive, handler: nil)
             alert.addAction(action1)

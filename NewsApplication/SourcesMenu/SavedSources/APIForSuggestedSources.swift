@@ -24,7 +24,7 @@ extension SavedSourcesController {
                     guard let id = newDict["id"]?.string else {return}
                     guard let name = newDict["name"]?.string else {return}
                     self.suggestedSourcesId.append(id)
-                    print(id)
+//                    print(id)
                     self.suggestedSourcesName.append(name)
                 }
             }

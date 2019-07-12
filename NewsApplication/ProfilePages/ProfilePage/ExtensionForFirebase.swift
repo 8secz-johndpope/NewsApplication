@@ -31,9 +31,9 @@ extension ProfilePageViewController {
         if phoneNumberTF.text?.rangeOfCharacter(from: .letters) != nil || phoneNumber.isEmpty {
             callAlertIf()
         }
-        
+        //"Business Insider", "Independent", "MTV News", "RBC", "Reuters"
         let userID = Auth.auth().currentUser?.uid
-        let subs: [String] = ["business-insider", "independent", "mtv-news", "rbc", "reuters"]
+        let subs: [String:String] = ["Business Insider": "business-insider", "Independent": "independent", "MTV News":"mtv-news", "RBC":"rbc", "Reuters":"reuters"]
         let securityData: [String: Any] = ["key": userID as Any,
                                            "name": "\(firstName)",
             "secondName": "\(secondName)",
@@ -52,8 +52,9 @@ extension ProfilePageViewController {
                 UserData.shared.yearOfBirth = "\(dateOfBirth)"
                 UserData.shared.country = "\(country)"
                 UserData.shared.city = "\(city)"
-                for i in subs {
-                    UserData.shared.subs.append("\(i)")
+                for (key, value) in subs {
+                    UserData.shared.subs.append("\(key)")
+                    UserData.shared.subsId.append("\(value)")
                 }
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")

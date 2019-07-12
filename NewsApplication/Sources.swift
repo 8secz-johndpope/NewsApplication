@@ -30,5 +30,5 @@ class UserData {
     var country: String = ""
     var city: String = ""
     var subs: [String] = []
-    var subscriptionsId: [String] = []
+    var subsId: [String] = []
 }

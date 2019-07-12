@@ -30,9 +30,18 @@ class MethodsForSideMenu {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "SavedSourcesController")
 //            uiView.dismiss(animated: true, completion: nil)//
+//            if !uiView.children.isEmpty {
+//                if uiView.children[0] == self {
+//                    print("win")
+//                } else {
+//                    print(uiView.children[0])
+//                }
+//            }
+            
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
+            
         case .weather:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "WeatherViewController")
@@ -47,7 +56,8 @@ class MethodsForSideMenu {
             uiView.addChild(vc)
         case .logout:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "PageViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "PageViewController") as! PageViewController
+            uiView.dismiss(animated: true, completion: nil)
             uiView.present(vc, animated: true, completion: nil)
 //            uiView.view.addSubview(vc.view)
 //            Properties.shared.topView = vc.view

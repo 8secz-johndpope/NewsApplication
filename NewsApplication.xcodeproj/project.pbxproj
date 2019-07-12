@@ -38,6 +38,7 @@
 		87FDEFA922D87BC800F15F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */; };
 		87FDEFAD22D8AFEC00F15F77 /* ExtensionForFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */; };
 		87FDEFB022D8B1D200F15F77 /* ExtenstionForPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */; };
+		87FDEFB422D8C79500F15F77 /* ExtensionUpdateSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFB322D8C79500F15F77 /* ExtensionUpdateSources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForFirebase.swift; sourceTree = "<group>"; };
 		87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenstionForPageController.swift; sourceTree = "<group>"; };
+		87FDEFB322D8C79500F15F77 /* ExtensionUpdateSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUpdateSources.swift; sourceTree = "<group>"; };
 		BE81922B497D81613CEE980C /* Pods_NewsApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF71DE1EE1F87E68BEF2E505 /* Pods-NewsApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApplication.release.xcconfig"; path = "Target Support Files/Pods-NewsApplication/Pods-NewsApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 				8714FB6422D7419400B50C5E /* SavedSourcesController.swift */,
 				8714FB6622D7455200B50C5E /* SavedSourcesCell.swift */,
 				8714FB6B22D74B0500B50C5E /* APIForSuggestedSources.swift */,
+				87FDEFB322D8C79500F15F77 /* ExtensionUpdateSources.swift */,
 			);
 			path = SavedSources;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				8714FB6522D7419400B50C5E /* SavedSourcesController.swift in Sources */,
 				8714FB7722D7A4DD00B50C5E /* ExtensionForWeatherVC.swift in Sources */,
 				8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */,
+				87FDEFB422D8C79500F15F77 /* ExtensionUpdateSources.swift in Sources */,
 				8714FB6E22D7643E00B50C5E /* BlankPageController.swift in Sources */,
 				8714FB7322D769D600B50C5E /* WeatherViewController.swift in Sources */,
 				8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */,

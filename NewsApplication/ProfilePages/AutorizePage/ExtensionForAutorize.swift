@@ -44,9 +44,10 @@ extension AuthorizeViewController: UITextFieldDelegate {
                     UserData.shared.country = "\(country)"
                     guard let city = value["city"] else {return}
                     UserData.shared.city = "\(city)"
-                    guard let subs = value["subs"] as? NSArray else {return}
-                    for i in subs {
-                        UserData.shared.subs.append("\(i)")
+                    guard let subs = value["subs"] as? NSDictionary else {return}
+                    for (key, value) in subs {
+                        UserData.shared.subs.append("\(key)")
+                        UserData.shared.subsId.append("\(value)")
                     }
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")
@@ -72,7 +73,11 @@ extension AuthorizeViewController: UITextFieldDelegate {
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
+        view.endEditing(true)
         return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 }

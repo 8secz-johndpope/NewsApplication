@@ -15,7 +15,12 @@ class BlankPageController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "NewsFeedController")
+//        view.addSubview(vc.view)
+//        Properties.shared.topView = vc.view
+//        addChild(vc)
+        
        
     }
     

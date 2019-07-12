@@ -52,7 +52,7 @@ class NewsFeedController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getAPI(sources: Sources.shared.arrayOfSources)
+        getAPI(sources: UserData.shared.subsId)
         tableView.refreshControl = myRefreshControl
     }
     

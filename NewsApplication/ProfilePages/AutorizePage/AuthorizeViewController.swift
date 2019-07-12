@@ -27,7 +27,6 @@ class AuthorizeViewController: UIViewController {
         reference = Database.database().reference()
         NotificationCenter.default.addObserver(self, selector: #selector(willShowNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
-    
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
     }
