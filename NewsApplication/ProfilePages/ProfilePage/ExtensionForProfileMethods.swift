@@ -8,6 +8,10 @@
 
 import UIKit
 import ActionSheetPicker_3_0
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+
 
 
 extension ProfilePageViewController: UITextFieldDelegate {

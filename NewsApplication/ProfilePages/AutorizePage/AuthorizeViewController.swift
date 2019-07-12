@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class AuthorizeViewController: UIViewController {
     
@@ -14,13 +17,14 @@ class AuthorizeViewController: UIViewController {
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var enterButtonOutlet: UIButton!
+     var reference: DatabaseReference!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loginTF.delegate = self
         passTF.delegate = self
-        
+        reference = Database.database().reference()
         NotificationCenter.default.addObserver(self, selector: #selector(willShowNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
     }
     

@@ -49,10 +49,10 @@ class WeatherViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        cityLabel.text = Sources.shared.weatherCity
+        cityLabel.text = UserData.shared.city
         weatherTable.delegate = self
         weatherTable.dataSource = self
-        getWeatherAPI(city: Sources.shared.weatherCity)
+        getWeatherAPI(city: UserData.shared.city)
     }
     
     func getWeatherAPI(city: String) {

@@ -37,6 +37,7 @@
 		8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346322D653F800342DF4 /* NewsFeedController.swift */; };
 		8767346622D6540C00342DF4 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346522D6540C00342DF4 /* NewsFeedCell.swift */; };
 		8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346A22D659D000342DF4 /* DescriptionViewController.swift */; };
+		87FDEFA922D87BC800F15F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		8767346322D653F800342DF4 /* NewsFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedController.swift; sourceTree = "<group>"; };
 		8767346522D6540C00342DF4 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		8767346A22D659D000342DF4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE81922B497D81613CEE980C /* Pods_NewsApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF71DE1EE1F87E68BEF2E505 /* Pods-NewsApplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApplication.release.xcconfig"; path = "Target Support Files/Pods-NewsApplication/Pods-NewsApplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,6 +199,7 @@
 				8767343E22D5DFF100342DF4 /* Assets.xcassets */,
 				8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */,
 				8767344322D5DFF100342DF4 /* Info.plist */,
+				87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */,
 				8714FB6822D746F200B50C5E /* Sources.swift */,
 			);
 			path = NewsApplication;
@@ -309,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8767344222D5DFF100342DF4 /* LaunchScreen.storyboard in Resources */,
+				87FDEFA922D87BC800F15F77 /* GoogleService-Info.plist in Resources */,
 				8767343F22D5DFF100342DF4 /* Assets.xcassets in Resources */,
 				8767343D22D5DFF100342DF4 /* Main.storyboard in Resources */,
 			);
@@ -328,7 +332,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-NewsApplication/Pods-NewsApplication-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ActionSheetPicker-3.0/ActionSheetPicker_3_0.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -336,7 +344,11 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ActionSheetPicker_3_0.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

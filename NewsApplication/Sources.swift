@@ -18,3 +18,17 @@ class Sources {
     var weatherCity = "Kyiv"
 }
 
+class UserData {
+    static let shared = UserData()
+    
+    var email: String = ""
+    var password: String = ""
+    var name: String = ""
+    var secondName: String = ""
+    var phone: String = ""
+    var yearOfBirth: String = ""
+    var country: String = ""
+    var city: String = ""
+    var subs: [String] = []
+    var subscriptionsId: [String] = []
+}

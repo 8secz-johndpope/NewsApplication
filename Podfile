@@ -9,4 +9,9 @@ target 'NewsApplication' do
 pod 'Alamofire'
 pod 'SwiftyJSON', '~> 4.0'
 pod 'ActionSheetPicker-3.0', '~> 2.3.0'
+
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+
 end

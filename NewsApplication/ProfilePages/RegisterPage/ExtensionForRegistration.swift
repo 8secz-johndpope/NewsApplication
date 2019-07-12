@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 extension RegisterViewController: UITextFieldDelegate {
     
@@ -32,9 +35,31 @@ extension RegisterViewController: UITextFieldDelegate {
             callAlertIfNotEqual()
         }
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
-        present(vc, animated: true, completion: nil)
+        Auth.auth().createUser(withEmail: email, password: pass) { (result, err) in
+            if err == nil {
+                
+                let securityData: [String: String] = ["email": email, "pass": pass]
+                let key = email.replacingOccurrences(of: ".", with: "")
+                self.reference.child("UsersDB").child(key).setValue(securityData) { (error, refer) in
+                    if error == nil {
+                        let key = email.replacingOccurrences(of: ".", with: "")
+                        UserData.shared.email = key
+                        UserData.shared.password = pass
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
+                        self.present(vc, animated: true, completion: nil)
+                        print("Save  to UsersDB succeeded")
+                    } else {
+                        print(" failed to save to UsersDB")
+                    }
+                }
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
+//                self.present(vc, animated: true, completion: nil)
+            } else {
+                print("register failure")
+            }
+        }
     }
     
     //MARK:

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
     
@@ -14,13 +17,15 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmTF: UITextField!
     
+    var reference: DatabaseReference!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTF.delegate = self
         passwordTF.delegate = self
         confirmTF.delegate = self
-       
+        reference = Database.database().reference()
     }
     
     @IBAction func registerButton(_ sender: Any) {
