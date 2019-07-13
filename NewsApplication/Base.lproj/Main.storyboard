@@ -257,7 +257,7 @@
                                     <constraint firstAttribute="height" constant="40" id="cjq-Xp-Dgv"/>
                                     <constraint firstAttribute="width" constant="150" id="ssD-nG-f1m"/>
                                 </constraints>
-                                <state key="normal" title="Kiev"/>
+                                <state key="normal" title="Kyiv"/>
                                 <connections>
                                     <action selector="cityButton:" destination="bUk-wp-Sb6" eventType="touchUpInside" id="LnO-R3-Q48"/>
                                 </connections>
