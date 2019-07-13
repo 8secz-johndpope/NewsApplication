@@ -78,7 +78,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Description Text" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="m5k-qH-HwJ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Description Text" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5k-qH-HwJ">
                                 <rect key="frame" x="20" y="365" width="374" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -343,59 +343,59 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNu-FU-Oh3">
-                                <rect key="frame" x="20" y="224" width="100" height="40"/>
+                                <rect key="frame" x="20" y="174" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="O0t-xx-2MF"/>
                                     <constraint firstAttribute="width" constant="100" id="kjD-AG-HOK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykd-dY-RK3">
-                                <rect key="frame" x="20" y="304" width="100" height="40"/>
+                                <rect key="frame" x="20" y="254" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="EOl-4G-UsV"/>
                                     <constraint firstAttribute="height" constant="40" id="H6m-7b-0kA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFM-va-gMI">
-                                <rect key="frame" x="20" y="384" width="100" height="40"/>
+                                <rect key="frame" x="20" y="334" width="100" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="0kj-x0-E6V"/>
                                     <constraint firstAttribute="height" constant="40" id="XYu-5X-4TN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r11-vw-NlS">
-                                <rect key="frame" x="194" y="224" width="200" height="40"/>
+                                <rect key="frame" x="204" y="174" width="190" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Jx0-Za-SLw"/>
-                                    <constraint firstAttribute="width" constant="200" id="rSv-ql-tTi"/>
+                                    <constraint firstAttribute="width" constant="190" id="rSv-ql-tTi"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-rv-pHf">
-                                <rect key="frame" x="194" y="304" width="200" height="40"/>
+                                <rect key="frame" x="204" y="254" width="190" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="2Wo-FQ-hen"/>
-                                    <constraint firstAttribute="width" constant="200" id="UhD-9b-czG"/>
+                                    <constraint firstAttribute="width" constant="190" id="UhD-9b-czG"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6X-lV-rpR">
-                                <rect key="frame" x="194" y="384" width="200" height="40"/>
+                                <rect key="frame" x="204" y="334" width="190" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="22Z-ek-Yqh"/>
+                                    <constraint firstAttribute="width" constant="190" id="22Z-ek-Yqh"/>
                                     <constraint firstAttribute="height" constant="40" id="3sk-F7-t7i"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -403,7 +403,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S67-mm-Pfv">
-                                <rect key="frame" x="100" y="474" width="214" height="40"/>
+                                <rect key="frame" x="100" y="424" width="214" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="TfU-IV-hHz"/>
                                 </constraints>
@@ -421,7 +421,7 @@
                         <constraints>
                             <constraint firstItem="CVR-rv-pHf" firstAttribute="top" secondItem="r11-vw-NlS" secondAttribute="bottom" constant="40" id="0wr-ei-Kyi"/>
                             <constraint firstItem="S67-mm-Pfv" firstAttribute="leading" secondItem="8N7-wa-aAw" secondAttribute="leading" constant="100" id="5Df-r4-lnu"/>
-                            <constraint firstItem="UNu-FU-Oh3" firstAttribute="top" secondItem="8T9-oh-eXl" secondAttribute="bottom" constant="100" id="5xS-fC-fXF"/>
+                            <constraint firstItem="UNu-FU-Oh3" firstAttribute="top" secondItem="8T9-oh-eXl" secondAttribute="bottom" constant="50" id="5xS-fC-fXF"/>
                             <constraint firstItem="8T9-oh-eXl" firstAttribute="centerX" secondItem="pId-Fu-10o" secondAttribute="centerX" id="8dG-W0-Ghk"/>
                             <constraint firstItem="8N7-wa-aAw" firstAttribute="trailing" secondItem="l6X-lV-rpR" secondAttribute="trailing" constant="20" id="APX-9R-oUX"/>
                             <constraint firstItem="S67-mm-Pfv" firstAttribute="top" secondItem="l6X-lV-rpR" secondAttribute="bottom" constant="50" id="ARM-KR-WlC"/>
@@ -436,7 +436,7 @@
                             <constraint firstItem="8T9-oh-eXl" firstAttribute="leading" secondItem="8N7-wa-aAw" secondAttribute="leading" constant="50" id="U4q-uB-LQa"/>
                             <constraint firstItem="jFM-va-gMI" firstAttribute="top" secondItem="Ykd-dY-RK3" secondAttribute="bottom" constant="40" id="er8-l1-gAh"/>
                             <constraint firstItem="Ykd-dY-RK3" firstAttribute="top" secondItem="UNu-FU-Oh3" secondAttribute="bottom" constant="40" id="fwc-kK-rEc"/>
-                            <constraint firstItem="r11-vw-NlS" firstAttribute="top" secondItem="8T9-oh-eXl" secondAttribute="bottom" constant="100" id="sxb-1r-OdH"/>
+                            <constraint firstItem="r11-vw-NlS" firstAttribute="top" secondItem="8T9-oh-eXl" secondAttribute="bottom" constant="50" id="sxb-1r-OdH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8N7-wa-aAw"/>
                     </view>

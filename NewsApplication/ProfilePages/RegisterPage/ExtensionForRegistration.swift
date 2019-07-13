@@ -19,13 +19,13 @@ extension RegisterViewController: UITextFieldDelegate {
         guard let pass = passwordTF.text else {return}
         guard let confirm = confirmTF.text else {return}
         
-        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
-        let validate = emailPredicate.evaluate(with: email)
-        
-        if validate == false {
-            callAlertForEmail()
-        }
+//        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+//        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+//        let validate = emailPredicate.evaluate(with: email)
+//
+//        if validate == false {
+//            callAlertForEmail()
+//        }
         
         if email.isEmpty || pass.isEmpty || confirm.isEmpty {
             callAlertIfEmpty()
@@ -37,10 +37,9 @@ extension RegisterViewController: UITextFieldDelegate {
             Auth.auth().createUser(withEmail: email, password: pass) { (result, err) in
                 if err == nil {
                     let securityData: [String: String] = ["email": email, "pass": pass]
-                    let key = email.replacingOccurrences(of: ".", with: "")
+                    let key = email.checkForbiddenCharacters()
                     self.reference.child("UsersDB").child(key).setValue(securityData) { (error, refer) in
                         if error == nil {
-                            let key = email.replacingOccurrences(of: ".", with: "")
                             UserData.shared.email = key
                             UserData.shared.password = pass
                             let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -52,6 +51,7 @@ extension RegisterViewController: UITextFieldDelegate {
                         }
                     }
                 } else {
+                    self.callAlertForEmail()
                     print("register failure")
                 }
             }
@@ -84,7 +84,6 @@ extension RegisterViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
-        
         return true
     }
 }

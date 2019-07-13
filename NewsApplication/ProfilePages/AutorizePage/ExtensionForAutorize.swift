@@ -24,7 +24,7 @@ extension AuthorizeViewController: UITextFieldDelegate {
         Auth.auth().signIn(withEmail: login, password: pass) { (result, error) in
             if error == nil {
                 UserData.shared.email = login
-                let key = UserData.shared.email.replacingOccurrences(of: ".", with: "")
+                let key = UserData.shared.email.checkForbiddenCharacters()
                 self.reference.child("UsersDB").child(key).observeSingleEvent(of: .value, with: { (snapshot) in
                     // Get user value
                     guard let value = snapshot.value as? NSDictionary else {return}
@@ -49,6 +49,7 @@ extension AuthorizeViewController: UITextFieldDelegate {
                         UserData.shared.subs.append("\(key)")
                         UserData.shared.subsId.append("\(value)")
                     }
+//                    self.dismiss(animated: true, completion: nil)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")
                     self.present(vc, animated: true, completion: nil)
@@ -81,4 +82,16 @@ extension AuthorizeViewController: UITextFieldDelegate {
 //    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        self.resignFirstResponder()
 //    }
+}
+
+extension String {
+    func checkForbiddenCharacters() -> String {
+        let key = self.replacingOccurrences(of: ".", with: "")
+        let key1 = key.replacingOccurrences(of: ".", with: "")
+        let key2 = key1.replacingOccurrences(of: "#", with: "")
+        let key3 = key2.replacingOccurrences(of: "$", with: "")
+        let key4 = key3.replacingOccurrences(of: "]", with: "")
+        let correctKey = key4.replacingOccurrences(of: "[", with: "")
+        return correctKey
+    }
 }
