@@ -18,14 +18,13 @@ class Properties {
 }
 
 class MethodsForSideMenu {
-
+    
     func transitionToNew(_ menuType: MenuType, uiView: UIViewController) {
         Properties.shared.topView?.removeFromSuperview()
         switch menuType {
         case .news:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "NewsFeedController")
-//            uiView.dismiss(animated: true, completion: nil) //
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)

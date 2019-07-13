@@ -12,8 +12,8 @@ import UIKit
 
 extension PageViewController {
     
+    //MARK: настройка PageController
     
-    //настройка PageController
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let viewControllerIndex = orderedViewControllers.firstIndex(of: viewController) else {return nil}
         let previousIndex = viewControllerIndex - 1

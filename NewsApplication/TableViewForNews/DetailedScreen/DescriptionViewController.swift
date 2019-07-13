@@ -10,6 +10,8 @@ import UIKit
 
 class DescriptionViewController: UIViewController {
     
+    //MARK: Экран для отображения контента новости 
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var imageView: UIImageView!
@@ -31,9 +33,6 @@ class DescriptionViewController: UIViewController {
         if let imageData = data2 {
             imageView.image = UIImage(data: imageData)?.withRenderingMode(.alwaysOriginal)
         }
-       
     }
-
-
 }
 

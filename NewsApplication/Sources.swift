@@ -10,12 +10,8 @@ import UIKit
 
 class Sources {
     static let shared = Sources()
-    var arrayOfSources = ["business-insider", "independent", "mtv-news", "rbc", "reuters"]
-    var arrayOfSourcesNames = ["Business Insider", "Independent", "MTV News", "RBC", "Reuters"]
     
     var countriesAndCities: [String:[String]] = ["Ukraine":["Kyiv", "Lviv", "Kharkiv", "Dnipro"], "Poland": ["Warsaw", "Krakow", "Lodz", "Poznan"], "Germany": ["Berlin", "Munich", "Cologne", "Hamburg"]]
-    
-    var weatherCity = "Kyiv"
 }
 
 class UserData {

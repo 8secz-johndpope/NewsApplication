@@ -12,6 +12,8 @@ import SwiftyJSON
 
 
 extension NewsFeedController {
+    
+    //MARK: Функция получает новости из выбранных пользователем новостных ресурсов в Источниках
     func getAPI(sources: Array<String>) {
         for source in sources {
             let baseURL = "https://newsapi.org"
@@ -35,14 +37,14 @@ extension NewsFeedController {
                         }
                     }
                     if someNumber == self.arrayOfTitles.count {
-                        self.arrayOfTitles.append(title)
+                        self.arrayOfTitles.insert(title, at: 0)
                         guard let description = newDict["description"]?.string else {return}
-                        self.arrayOfDescription.append(description)
+                        self.arrayOfDescription.insert(description, at: 0)
                         let imageLink = newDict["urlToImage"]?.string
                         if imageLink == nil {
-                            self.arrayOfImageLinks.append("no link")
+                            self.arrayOfImageLinks.insert("no link", at: 0)
                         } else {
-                            self.arrayOfImageLinks.append(imageLink!)
+                            self.arrayOfImageLinks.insert(imageLink!, at: 0)
                         }
                         someNumber = 0
                     }

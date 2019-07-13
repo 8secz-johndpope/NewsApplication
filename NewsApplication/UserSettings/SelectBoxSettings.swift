@@ -15,15 +15,16 @@ import ActionSheetPicker_3_0
 
 extension ProfileSettingsPage {
     
+    //MARK: Select Box для страны
     func getCountry(country: String) {
         countryOutlet.setTitle("\(country)", for: .normal)
     }
-    //MARK:
+    //MARK: Select Box для города
     func getCity(country: String) {
         cityOutlet.setTitle("\(country)", for: .normal)
     }
     
-    //MARK:
+    //MARK: Настройки Select Box
     func actionPickerOne() {
         ActionSheetMultipleStringPicker.show(withTitle: "Select country", rows: [
             self.arrayOfCountries], initialSelection: [0], doneBlock: {
@@ -39,6 +40,7 @@ extension ProfileSettingsPage {
     }
     
     func actionPickerTwo() {
+        arrayOfCities.removeAll()
         for (key, value) in Sources.shared.countriesAndCities {
             if key == countryOutlet.titleLabel?.text {
                 for i in value {

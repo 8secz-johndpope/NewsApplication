@@ -38,6 +38,8 @@
 		8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346A22D659D000342DF4 /* DescriptionViewController.swift */; };
 		87C1E54722D9D7CE00F4DD32 /* SelectBoxSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1E54622D9D7CE00F4DD32 /* SelectBoxSettings.swift */; };
 		87C1E54922D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1E54822D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift */; };
+		87C1E54B22DA2A9500F4DD32 /* FakeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1E54A22DA2A9400F4DD32 /* FakeAPI.swift */; };
+		87C1E54D22DA34CE00F4DD32 /* WeatherAPIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1E54C22DA34CE00F4DD32 /* WeatherAPIExtension.swift */; };
 		87FDEFA922D87BC800F15F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */; };
 		87FDEFAD22D8AFEC00F15F77 /* ExtensionForFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */; };
 		87FDEFB022D8B1D200F15F77 /* ExtenstionForPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */; };
@@ -78,6 +80,8 @@
 		8767346A22D659D000342DF4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		87C1E54622D9D7CE00F4DD32 /* SelectBoxSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBoxSettings.swift; sourceTree = "<group>"; };
 		87C1E54822D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFirebaseUpdate.swift; sourceTree = "<group>"; };
+		87C1E54A22DA2A9400F4DD32 /* FakeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeAPI.swift; sourceTree = "<group>"; };
+		87C1E54C22DA34CE00F4DD32 /* WeatherAPIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIExtension.swift; sourceTree = "<group>"; };
 		87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForFirebase.swift; sourceTree = "<group>"; };
 		87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenstionForPageController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				8714FB7222D769D600B50C5E /* WeatherViewController.swift */,
 				8714FB7622D7A4DD00B50C5E /* ExtensionForWeatherVC.swift */,
 				8714FB7422D7A47700B50C5E /* WeatherCell.swift */,
+				87C1E54C22DA34CE00F4DD32 /* WeatherAPIExtension.swift */,
 			);
 			path = WeatherPage;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				8767346322D653F800342DF4 /* NewsFeedController.swift */,
 				8714FB6022D735E900B50C5E /* ExtensionForAPI.swift */,
 				8767346522D6540C00342DF4 /* NewsFeedCell.swift */,
+				87C1E54A22DA2A9400F4DD32 /* FakeAPI.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -412,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87C1E54B22DA2A9500F4DD32 /* FakeAPI.swift in Sources */,
 				8714FB8B22D7FE6A00B50C5E /* ExtensionForAutorize.swift in Sources */,
 				8767345A22D6071100342DF4 /* Extension.swift in Sources */,
 				8714FB8022D7D9EF00B50C5E /* RegisterViewController.swift in Sources */,
@@ -438,6 +445,7 @@
 				8714FB6E22D7643E00B50C5E /* BlankPageController.swift in Sources */,
 				8714FB7322D769D600B50C5E /* WeatherViewController.swift in Sources */,
 				8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */,
+				87C1E54D22DA34CE00F4DD32 /* WeatherAPIExtension.swift in Sources */,
 				8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */,
 				8714FB8222D7DD6000B50C5E /* ProfilePageViewController.swift in Sources */,
 				8714FB6C22D74B0500B50C5E /* APIForSuggestedSources.swift in Sources */,

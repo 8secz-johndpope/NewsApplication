@@ -13,6 +13,8 @@ import FirebaseDatabase
 
 class RegisterViewController: UIViewController {
     
+    //MARK: Экран регистрации
+    
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     @IBOutlet weak var confirmTF: UITextField!

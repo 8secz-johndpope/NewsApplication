@@ -15,6 +15,8 @@ import FirebaseDatabase
 
 class ProfilePageViewController: UIViewController {
     
+    //MARK: Контроллер для дополнительной настройки пользовательской информациии открывается после Регистрации.
+    
     var reference: DatabaseReference!
     
     let transtion = TransitionClass()

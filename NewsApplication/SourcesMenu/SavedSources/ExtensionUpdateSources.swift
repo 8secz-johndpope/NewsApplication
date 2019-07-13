@@ -12,6 +12,9 @@ import FirebaseAuth
 import FirebaseDatabase
 
 extension SavedSourcesController {
+    
+    //MARK: Сохраняет изменения кол-ва источников, выбранных пользователем, в базу данных
+    
     func updateSources() {
         let sources: [String: String] = {
             var sources = [String:String]()

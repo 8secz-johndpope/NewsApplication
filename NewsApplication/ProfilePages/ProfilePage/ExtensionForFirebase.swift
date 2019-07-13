@@ -15,7 +15,7 @@ import FirebaseDatabase
 
 extension ProfilePageViewController {
     
-    
+    //MARK: Дозаполняет информацию о пользователе в базу данных. Так же при регистрации пользователя добавляет ему 5 подписок на новостные каналы.
     
     func writeDataToDB() {
         guard let firstName = firstNameTF.text else {return}
@@ -31,7 +31,6 @@ extension ProfilePageViewController {
         if phoneNumberTF.text?.rangeOfCharacter(from: .letters) != nil || phoneNumber.isEmpty {
             callAlertIf()
         }
-        //"Business Insider", "Independent", "MTV News", "RBC", "Reuters"
         let userID = Auth.auth().currentUser?.uid
         let subs: [String:String] = ["Business Insider": "business-insider", "Independent": "independent", "MTV News":"mtv-news", "RBC":"rbc", "Reuters":"reuters"]
         let securityData: [String: Any] = ["key": userID as Any,
@@ -59,7 +58,6 @@ extension ProfilePageViewController {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")
                 self.present(vc, animated: true, completion: nil)
-                //print("Save  to UsersDB succeeded")
             } else {
                 print(" failed to save to UsersDB")
             }

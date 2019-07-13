@@ -11,6 +11,9 @@ import Alamofire
 import SwiftyJSON
 
 extension SavedSourcesController {
+    
+    //MARK: Подгружает список популярных новостных каналов, что бы продемонстрировать множественный выбор источников.
+    
     func getAPI() {
             let baseURL = "https://newsapi.org/v2/sources?language=en&language=ru&apiKey=03a051ab4ea64854a68c2556325f42a5"
             guard let url = URL(string: baseURL) else {return}

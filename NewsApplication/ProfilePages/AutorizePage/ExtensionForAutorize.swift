@@ -13,7 +13,8 @@ import FirebaseDatabase
 
 extension AuthorizeViewController: UITextFieldDelegate {
     
-    //MARK:
+    //MARK: Проверяет пользователя в базе данных и подгружает в синглтон все данные о нем
+    
     func checkCredentials() {
         guard let login = loginTF.text else {return}
         guard let pass = passTF.text else {return}
@@ -49,7 +50,6 @@ extension AuthorizeViewController: UITextFieldDelegate {
                         UserData.shared.subs.append("\(key)")
                         UserData.shared.subsId.append("\(value)")
                     }
-//                    self.dismiss(animated: true, completion: nil)
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")
                     self.present(vc, animated: true, completion: nil)
@@ -63,7 +63,7 @@ extension AuthorizeViewController: UITextFieldDelegate {
         }
     }
     
-    //MARK:
+    //MARK: Ошибка логинизации
     func alertForLoginFailure() {
         let alert = UIAlertController(title: "Incorrect pass or login", message: nil, preferredStyle: .alert)
         let action = UIAlertAction(title: "Okay", style: .destructive, handler: nil)
@@ -74,14 +74,9 @@ extension AuthorizeViewController: UITextFieldDelegate {
     
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        view.endEditing(true)
-        textField.resignFirstResponder()
+        view.endEditing(true)
         return true
     }
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.resignFirstResponder()
-//    }
 }
 
 extension String {

@@ -51,9 +51,6 @@ class TransitionClass: NSObject, UIViewControllerAnimatedTransitioning {
         }) { (_) in
             transitionContext.completeTransition(!isCancelled)
         }
-        
     }
-    
-
 }
 

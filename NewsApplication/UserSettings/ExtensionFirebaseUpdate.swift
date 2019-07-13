@@ -12,6 +12,8 @@ import FirebaseAuth
 import FirebaseDatabase
 
 extension ProfileSettingsPage: UITextFieldDelegate {
+    
+    //MARK: Функция вызывает алерт с текст филд что бы пользователь поменял пароль. Изменяет его независимо от того, менял пользователь другую информацию в контроллере или нет.
 
     func changePass() {
         let alert = UIAlertController(title: "Choose new password", message: "Pass must contain at least 8 characters", preferredStyle: .alert)
@@ -48,6 +50,7 @@ extension ProfileSettingsPage: UITextFieldDelegate {
         present(alert, animated: true, completion: nil)
     }
     
+    //MARK: Обновляет данные о пользователе в базе данных и в приложении
     
     func updateDBValues() {
         guard let nameValue = nameTF.text else {return}
@@ -62,11 +65,13 @@ extension ProfileSettingsPage: UITextFieldDelegate {
         UserData.shared.city = cityValue
         if !nameValue.isEmpty && !secondNameValue.isEmpty && !phoneValue.isEmpty {
             let values: [String:String] = ["name": nameValue, "secondName": secondNameValue, "phone": phoneValue, "country": countryValue, "city": cityValue, "pass": UserData.shared.password]
-            reference.child("UsersDB").child(UserData.shared.email).updateChildValues(values) { (error, reference) in
+            DispatchQueue.main.async {
+                self.reference.child("UsersDB").child(UserData.shared.email).updateChildValues(values) { (error, reference) in
                 if error != nil {
                     print("error")
                 }
             }
+        }
         }
     }
     

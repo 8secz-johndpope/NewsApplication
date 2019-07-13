@@ -9,6 +9,9 @@
 import UIKit
 
 extension WeatherViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    //MARK: TableView Settings
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.weatherDate.count < 5 || self.weatherTempMax.count < 5 || self.weatherTempMin.count < 5 || self.weatherMain.count < 5 {
             return 0

@@ -50,11 +50,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="gAC-pL-cPZ">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Jfk-Cn-4Zs">
-                            <connections>
-                                <action selector="menuButton:" destination="Eqr-W9-FTN" id="vy2-3F-PFe"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Jfk-Cn-4Zs"/>
                     </navigationItem>
                     <connections>
                         <segue destination="yVO-SY-Pah" kind="show" identifier="descriptionSegue" id="E8y-kG-Lrl"/>

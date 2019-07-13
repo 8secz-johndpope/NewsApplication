@@ -13,6 +13,9 @@ import FirebaseDatabase
 import ActionSheetPicker_3_0
 
 class ProfileSettingsPage: UIViewController {
+    
+    //MARK: Контроллер для просмотра или редактирования пользовательской информации. Автоматически обновляет информацию про пользователя при выходе из контроллера.
+    
     var reference: DatabaseReference!
     let transtion = TransitionClass()
     var topView: UIView?

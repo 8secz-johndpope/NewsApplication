@@ -10,6 +10,8 @@ import UIKit
 
 class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
     
+    //MARK: Контроллер для свайпа между логином и регистрацией
+    
     lazy var orderedViewControllers: [UIViewController] = {
         [self.newVC(viewcontroller: "AuthorizeViewController"),
          self.newVC(viewcontroller: "RegisterViewController")]

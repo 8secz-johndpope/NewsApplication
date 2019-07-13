@@ -16,21 +16,21 @@ import FirebaseDatabase
 
 extension ProfilePageViewController: UITextFieldDelegate {
     
-    //MARK:
+    //MARK: Выбрать дату рождения
     func getBirthDate(day: Int, month: Int, year: Int) {
         dateOfBirthButtonOutlet.setTitle("\(day).\(month).\(year)", for: .normal)
     }
-    //MARK:
+    //MARK: Выбрать страну
     func getCountry(country: String) {
         countryButtonOutlet.setTitle("\(country)", for: .normal)
     }
-    //MARK:
+    //MARK: Выбрать город
     func getCity(country: String) {
         cityButtonOutlet.setTitle("\(country)", for: .normal)
     }
     
     
-    //MARK:
+    //MARK: Настройка Select Box для даты
     func actionPickerOne() {
         ActionSheetMultipleStringPicker.show(withTitle: "Select date of birth", rows: [
             self.arrayForDays, self.arrayForMonth, self.arrayForYears], initialSelection: [0, 0, 0], doneBlock: {
@@ -46,7 +46,7 @@ extension ProfilePageViewController: UITextFieldDelegate {
     }
     
     
-    //MARK:
+    //MARK: Настройка Select Box для страны
     func actionPickerTwo() {
         ActionSheetMultipleStringPicker.show(withTitle: "Select country", rows: [
             self.arrayOfCountries], initialSelection: [0], doneBlock: {
@@ -62,8 +62,9 @@ extension ProfilePageViewController: UITextFieldDelegate {
     }
     
     
-    //MARK:
+    //MARK: Настройка Select Box для города
     func actionPickerThree() {
+        arrayOfCities.removeAll()
         for (key, value) in Sources.shared.countriesAndCities {
             if key == countryButtonOutlet.titleLabel?.text {
                 for i in value {

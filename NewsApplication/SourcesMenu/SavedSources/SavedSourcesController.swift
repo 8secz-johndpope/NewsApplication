@@ -12,6 +12,9 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class SavedSourcesController: UITableViewController {
+    
+    //MARK: Контроллер показывает список Источников из которых берется информация. В первой секции - Сохраненные пользователем источники, во второй - источники полученные через запрос (отображает список самых популярных каналов). В первой секции можно удалять свайпом, во второй можно добавлять источник по тапу.
+    
     var reference: DatabaseReference!
     let transtion = TransitionClass()
     var topView: UIView?
@@ -47,7 +50,6 @@ class SavedSourcesController: UITableViewController {
     }
     
     //MARK: Settings for TableView
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
@@ -69,7 +71,6 @@ class SavedSourcesController: UITableViewController {
         
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SavedSourcesCell", for: indexPath) as! SavedSourcesCell
         if indexPath.section == 0 {
@@ -90,9 +91,7 @@ class SavedSourcesController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
             if editingStyle == .delete {
-//                Sources.shared.arrayOfSourcesNames.remove(at: indexPath.row)
                 UserData.shared.subs.remove(at: indexPath.row)
-//                Sources.shared.arrayOfSources.remove(at: indexPath.row)
                 UserData.shared.subsId.remove(at: indexPath.row)
                 tableView.reloadData()
             }
