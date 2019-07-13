@@ -72,13 +72,14 @@ extension AuthorizeViewController: UITextFieldDelegate {
         present(alert, animated: true, completion: nil)
     }
     
-    
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         view.endEditing(true)
         return true
     }
 }
+
+
+//MARK: Удаляет из строки запрещенные символы, так как сохранение в child nod в базе данных вызывает сбой работы.
 
 extension String {
     func checkForbiddenCharacters() -> String {
