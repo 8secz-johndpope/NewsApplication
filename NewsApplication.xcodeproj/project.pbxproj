@@ -212,13 +212,12 @@
 			isa = PBXGroup;
 			children = (
 				8767343722D5DFF100342DF4 /* AppDelegate.swift */,
-				8714FB6D22D7643E00B50C5E /* BlankPageController.swift */,
-				8767345D22D6107A00342DF4 /* SettingsForSideMenu */,
 				8767345E22D6236E00342DF4 /* TableViewForNews */,
 				8714FB6322D7412C00B50C5E /* SourcesMenu */,
 				8714FB7122D769B800B50C5E /* WeatherPage */,
 				8714FB7822D7D8C600B50C5E /* ProfilePages */,
 				873F5B3422D937A900681BDC /* UserSettings */,
+				8767345D22D6107A00342DF4 /* SettingsForSideMenu */,
 				8767343B22D5DFF100342DF4 /* Main.storyboard */,
 				8767343E22D5DFF100342DF4 /* Assets.xcassets */,
 				8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */,
@@ -232,10 +231,8 @@
 		8767345D22D6107A00342DF4 /* SettingsForSideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				8767344922D5E12C00342DF4 /* MenuViewController.swift */,
-				8767345922D6071100342DF4 /* Extension.swift */,
-				8767345B22D608D600342DF4 /* MethodForTransition.swift */,
-				8767344D22D5E7C600342DF4 /* TransitionClass.swift */,
+				87C1E55022DA8CB500F4DD32 /* BlankPageForLaunch */,
+				87C1E55122DA8CD900F4DD32 /* SideMenuConfig */,
 			);
 			path = SettingsForSideMenu;
 			sourceTree = "<group>";
@@ -266,6 +263,25 @@
 				8767346A22D659D000342DF4 /* DescriptionViewController.swift */,
 			);
 			path = DetailedScreen;
+			sourceTree = "<group>";
+		};
+		87C1E55022DA8CB500F4DD32 /* BlankPageForLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				8714FB6D22D7643E00B50C5E /* BlankPageController.swift */,
+			);
+			path = BlankPageForLaunch;
+			sourceTree = "<group>";
+		};
+		87C1E55122DA8CD900F4DD32 /* SideMenuConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8767344922D5E12C00342DF4 /* MenuViewController.swift */,
+				8767345922D6071100342DF4 /* Extension.swift */,
+				8767345B22D608D600342DF4 /* MethodForTransition.swift */,
+				8767344D22D5E7C600342DF4 /* TransitionClass.swift */,
+			);
+			path = SideMenuConfig;
 			sourceTree = "<group>";
 		};
 		87FDEFAE22D8B1A700F15F77 /* LaunchPageController */ = {

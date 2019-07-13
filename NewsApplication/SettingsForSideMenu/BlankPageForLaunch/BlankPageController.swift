@@ -8,18 +8,18 @@
 
 import UIKit
 
-class BlankPageController: UIViewController {
+class BlankPageController: UIViewController {    
 
     let transtion = TransitionClass()
     var topView: UIView?
+    let sideMenuMethods = MethodsForSideMenu()
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
-       
+        super.viewDidLoad()
+        sideMenuMethods.openSideMenu(uiview: self)
     }
     
     @IBAction func menuButton(_ sender: Any) {
-        let sideMenuMethods = MethodsForSideMenu()
         sideMenuMethods.openSideMenu(uiview: self)
     }
     

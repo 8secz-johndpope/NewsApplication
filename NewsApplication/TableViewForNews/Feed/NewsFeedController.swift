@@ -18,7 +18,7 @@ class NewsFeedController: UITableViewController {
     var topView: UIView?
     var fetchingMore = false
     
-    var numberOfPosts = 30
+    var numberOfPosts = 10
     
     fileprivate let myRefreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()

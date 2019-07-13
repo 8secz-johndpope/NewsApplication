@@ -102,9 +102,17 @@ class SavedSourcesController: UITableViewController {
         if indexPath.section == 1 {
             let alert = UIAlertController(title: "Add this source to your list?", message: nil, preferredStyle: .alert)
             let action1 = UIAlertAction(title: "Yes", style: .default) { (_) in
+                var value = false
+                for i in UserData.shared.subsId {
+                    if i == self.suggestedSourcesId[indexPath.row] {
+                        value = true
+                    }
+                }
+                if value == false {
                 UserData.shared.subsId.append(self.suggestedSourcesId[indexPath.row])
                 UserData.shared.subs.append(self.suggestedSourcesName[indexPath.row])
                 tableView.reloadData()
+                }
             }
             let action2 = UIAlertAction(title: "No", style: .destructive, handler: nil)
             alert.addAction(action1)

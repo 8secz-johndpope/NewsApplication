@@ -13,6 +13,8 @@ import FirebaseDatabase
 
 class AuthorizeViewController: UIViewController {
     
+    var didTapMenuType: ((MenuType) -> Void)?
+    
     @IBOutlet weak var signUpLbl: UILabel!
     @IBOutlet weak var loginTF: UITextField!
     @IBOutlet weak var passTF: UITextField!

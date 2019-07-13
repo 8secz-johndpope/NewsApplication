@@ -59,6 +59,7 @@ extension AuthorizeViewController: UITextFieldDelegate {
                 
             } else {
                 print("failed to login")
+                self.alertForLoginFailure()
             }
         }
     }
