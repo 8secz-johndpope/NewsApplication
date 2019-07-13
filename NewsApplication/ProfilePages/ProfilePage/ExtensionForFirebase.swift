@@ -58,6 +58,7 @@ extension ProfilePageViewController {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "BlankPageControllerNav")
                 self.present(vc, animated: true, completion: nil)
+                self.navigationController?.popToRootViewController(animated: true)
             } else {
                 print(" failed to save to UsersDB")
             }

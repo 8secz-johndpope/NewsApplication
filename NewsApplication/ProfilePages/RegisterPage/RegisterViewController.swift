@@ -23,11 +23,18 @@ class RegisterViewController: UIViewController {
     
 
     override func viewDidLoad() {
+        navigationController?.navigationBar.isHidden = true
         super.viewDidLoad()
         emailTF.delegate = self
         passwordTF.delegate = self
         confirmTF.delegate = self
         reference = Database.database().reference()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        emailTF.text = ""
+        passwordTF.text = ""
+        confirmTF.text = ""
     }
     
     @IBAction func registerButton(_ sender: Any) {

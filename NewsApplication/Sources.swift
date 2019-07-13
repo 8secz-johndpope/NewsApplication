@@ -8,12 +8,13 @@
 
 import UIKit
 
+//MARK: синглтон для Select Box, выбора стран и городов
 class Sources {
     static let shared = Sources()
-    
     var countriesAndCities: [String:[String]] = ["Ukraine":["Kyiv", "Lviv", "Kharkiv", "Dnipro"], "Poland": ["Warsaw", "Krakow", "Lodz", "Poznan"], "Germany": ["Berlin", "Munich", "Cologne", "Hamburg"]]
 }
 
+//MARK: синглтон для пользовательской информации
 class UserData {
     static let shared = UserData()
     

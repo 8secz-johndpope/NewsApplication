@@ -21,6 +21,8 @@ enum MenuType: Int {
 
 class MenuViewController: UITableViewController {
     
+    //MARK: Боковое меню. Все последующие файлы в папке - настройка взаимодействия с контроллерами и переходы.
+    
     var reference: DatabaseReference!
     
     var didTapMenuType: ((MenuType) -> Void)?

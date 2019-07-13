@@ -57,8 +57,11 @@ class MethodsForSideMenu {
                 print("failed to sign out")
             }
             uiView.dismiss(animated: true, completion: nil)
-            uiView.view.removeFromSuperview()
-            uiView.view.window?.rootViewController = vc
+            
+//            uiView.dismiss(animated: true, completion: nil)
+//            uiView.view.removeFromSuperview()
+//            uiView.present(vc, animated: true, completion: nil)
+//            uiView.view.window?.rootViewController = vc
         }
     }
 

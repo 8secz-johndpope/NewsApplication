@@ -32,7 +32,8 @@ extension RegisterViewController: UITextFieldDelegate {
                             UserData.shared.password = pass
                             let storyboard = UIStoryboard(name: "Main", bundle: nil)
                             let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
-                            self.present(vc, animated: true, completion: nil)
+//                            self.present(vc, animated: true, completion: nil)
+                            self.navigationController?.pushViewController(vc, animated: true)
                             print("Save to UsersDB succeeded")
                         } else {
                             print("failed to save to UsersDB")

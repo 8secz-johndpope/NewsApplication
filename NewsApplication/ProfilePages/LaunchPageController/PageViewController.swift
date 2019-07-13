@@ -14,7 +14,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     
     lazy var orderedViewControllers: [UIViewController] = {
         [self.newVC(viewcontroller: "AuthorizeViewController"),
-         self.newVC(viewcontroller: "RegisterViewController")]
+         self.newVC(viewcontroller: "RegisterViewControllerNav")]
     }()
     
     var pageControl = UIPageControl()
