@@ -55,7 +55,7 @@ class WeatherViewController: UIViewController {
         getWeatherAPI(city: UserData.shared.city)
     }
     
-    func getWeatherAPI(city: String) {
+    fileprivate func getWeatherAPI(city: String) {
         DispatchQueue.main.async {
         let basicURL = "http://api.openweathermap.org/data/2.5/forecast?&lang=ru&q=\(city)"
         let apiKey = "&appid=584923265195ec1fdd63a6457480aaad"

@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class Properties {
     static let shared = Properties()
@@ -29,15 +32,6 @@ class MethodsForSideMenu {
         case .links:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "SavedSourcesController")
-//            uiView.dismiss(animated: true, completion: nil)//
-//            if !uiView.children.isEmpty {
-//                if uiView.children[0] == self {
-//                    print("win")
-//                } else {
-//                    print(uiView.children[0])
-//                }
-//            }
-            
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
@@ -50,13 +44,19 @@ class MethodsForSideMenu {
             uiView.addChild(vc)
         case .profile:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "ProfilePageViewController")
+            let vc = storyboard.instantiateViewController(withIdentifier: "ProfileSettingsPage")
             uiView.view.addSubview(vc.view)
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
         case .logout:
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "PageViewController") as! PageViewController
+            let vc = storyboard.instantiateViewController(withIdentifier: "PageViewController")
+            do {
+                try Auth.auth().signOut()
+                print("signed out")
+            } catch {
+                print("failed to sign out")
+            }
             uiView.dismiss(animated: true, completion: nil)
             uiView.present(vc, animated: true, completion: nil)
 //            uiView.view.addSubview(vc.view)

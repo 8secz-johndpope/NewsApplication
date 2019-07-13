@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 enum MenuType: Int {
     case news
@@ -18,11 +21,13 @@ enum MenuType: Int {
 
 class MenuViewController: UITableViewController {
     
+    var reference: DatabaseReference!
+    
     var didTapMenuType: ((MenuType) -> Void)?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        reference = Database.database().reference()
     }
     
 

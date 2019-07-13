@@ -95,8 +95,8 @@ class NewsFeedController: UITableViewController {
     fileprivate func beginFetch() {
         fetchingMore = true
         print("beginFetch")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
-            self.getAPI(sources: Sources.shared.arrayOfSources)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: {
+            self.getAPI(sources: UserData.shared.subsId)
             self.fetchingMore = false
         })
     }

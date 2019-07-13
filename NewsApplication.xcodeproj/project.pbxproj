@@ -24,6 +24,7 @@
 		8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */; };
 		8714FB8922D7FACE00B50C5E /* ExtensionForRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8822D7FACE00B50C5E /* ExtensionForRegistration.swift */; };
 		8714FB8B22D7FE6A00B50C5E /* ExtensionForAutorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */; };
+		873F5B3322D934F800681BDC /* ProfileSettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873F5B3222D934F800681BDC /* ProfileSettingsPage.swift */; };
 		8767343822D5DFF100342DF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767343722D5DFF100342DF4 /* AppDelegate.swift */; };
 		8767343D22D5DFF100342DF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8767343B22D5DFF100342DF4 /* Main.storyboard */; };
 		8767343F22D5DFF100342DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8767343E22D5DFF100342DF4 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 		8767346422D653F800342DF4 /* NewsFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346322D653F800342DF4 /* NewsFeedController.swift */; };
 		8767346622D6540C00342DF4 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346522D6540C00342DF4 /* NewsFeedCell.swift */; };
 		8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8767346A22D659D000342DF4 /* DescriptionViewController.swift */; };
+		87C1E54722D9D7CE00F4DD32 /* SelectBoxSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1E54622D9D7CE00F4DD32 /* SelectBoxSettings.swift */; };
+		87C1E54922D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1E54822D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift */; };
 		87FDEFA922D87BC800F15F77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */; };
 		87FDEFAD22D8AFEC00F15F77 /* ExtensionForFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */; };
 		87FDEFB022D8B1D200F15F77 /* ExtenstionForPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */; };
@@ -59,6 +62,7 @@
 		8714FB8422D7E9C700B50C5E /* ExtensionForProfileMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForProfileMethods.swift; sourceTree = "<group>"; };
 		8714FB8822D7FACE00B50C5E /* ExtensionForRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForRegistration.swift; sourceTree = "<group>"; };
 		8714FB8A22D7FE6A00B50C5E /* ExtensionForAutorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForAutorize.swift; sourceTree = "<group>"; };
+		873F5B3222D934F800681BDC /* ProfileSettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsPage.swift; sourceTree = "<group>"; };
 		8767343422D5DFF100342DF4 /* NewsApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8767343722D5DFF100342DF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8767343C22D5DFF100342DF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		8767346322D653F800342DF4 /* NewsFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedController.swift; sourceTree = "<group>"; };
 		8767346522D6540C00342DF4 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		8767346A22D659D000342DF4 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		87C1E54622D9D7CE00F4DD32 /* SelectBoxSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectBoxSettings.swift; sourceTree = "<group>"; };
+		87C1E54822D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionFirebaseUpdate.swift; sourceTree = "<group>"; };
 		87FDEFA822D87BC800F15F77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		87FDEFAC22D8AFEC00F15F77 /* ExtensionForFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForFirebase.swift; sourceTree = "<group>"; };
 		87FDEFAF22D8B1D200F15F77 /* ExtenstionForPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtenstionForPageController.swift; sourceTree = "<group>"; };
@@ -169,6 +175,16 @@
 			path = RegisterPage;
 			sourceTree = "<group>";
 		};
+		873F5B3422D937A900681BDC /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+				873F5B3222D934F800681BDC /* ProfileSettingsPage.swift */,
+				87C1E54622D9D7CE00F4DD32 /* SelectBoxSettings.swift */,
+				87C1E54822D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift */,
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
 		8767342B22D5DFF100342DF4 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +213,7 @@
 				8714FB6322D7412C00B50C5E /* SourcesMenu */,
 				8714FB7122D769B800B50C5E /* WeatherPage */,
 				8714FB7822D7D8C600B50C5E /* ProfilePages */,
+				873F5B3422D937A900681BDC /* UserSettings */,
 				8767343B22D5DFF100342DF4 /* Main.storyboard */,
 				8767343E22D5DFF100342DF4 /* Assets.xcassets */,
 				8767344022D5DFF100342DF4 /* LaunchScreen.storyboard */,
@@ -402,7 +419,9 @@
 				8714FB8922D7FACE00B50C5E /* ExtensionForRegistration.swift in Sources */,
 				8767346B22D659D000342DF4 /* DescriptionViewController.swift in Sources */,
 				8767344E22D5E7C600342DF4 /* TransitionClass.swift in Sources */,
+				873F5B3322D934F800681BDC /* ProfileSettingsPage.swift in Sources */,
 				8714FB6122D735E900B50C5E /* ExtensionForAPI.swift in Sources */,
+				87C1E54922D9E1E900F4DD32 /* ExtensionFirebaseUpdate.swift in Sources */,
 				87FDEFAD22D8AFEC00F15F77 /* ExtensionForFirebase.swift in Sources */,
 				8767346622D6540C00342DF4 /* NewsFeedCell.swift in Sources */,
 				8767345C22D608D600342DF4 /* MethodForTransition.swift in Sources */,
@@ -412,6 +431,7 @@
 				8714FB7E22D7D9E200B50C5E /* AuthorizeViewController.swift in Sources */,
 				8714FB7C22D7D96900B50C5E /* PageViewController.swift in Sources */,
 				8714FB6522D7419400B50C5E /* SavedSourcesController.swift in Sources */,
+				87C1E54722D9D7CE00F4DD32 /* SelectBoxSettings.swift in Sources */,
 				8714FB7722D7A4DD00B50C5E /* ExtensionForWeatherVC.swift in Sources */,
 				8714FB8522D7E9C700B50C5E /* ExtensionForProfileMethods.swift in Sources */,
 				87FDEFB422D8C79500F15F77 /* ExtensionUpdateSources.swift in Sources */,

@@ -29,6 +29,8 @@ class AuthorizeViewController: UIViewController {
     }
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        loginTF.text = ""
+        passTF.text = ""
     }
     
     @IBAction func enterButton(_ sender: Any) {
