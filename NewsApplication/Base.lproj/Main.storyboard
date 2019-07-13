@@ -461,25 +461,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcK-Cm-tqD">
                                 <rect key="frame" x="50" y="144" width="314" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="03U-MQ-40j"/>
+                                    <constraint firstAttribute="height" constant="40" id="SvV-iF-UET"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W1h-Hi-YdL">
-                                <rect key="frame" x="30" y="264" width="354" height="50"/>
+                                <rect key="frame" x="50" y="264" width="314" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="iUh-wl-db1"/>
+                                    <constraint firstAttribute="height" constant="50" id="Nfd-1R-gZ6"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-mK-g3Z">
-                                <rect key="frame" x="30" y="354" width="354" height="50"/>
+                                <rect key="frame" x="50" y="354" width="314" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="rTz-Dr-M5H"/>
+                                    <constraint firstAttribute="height" constant="50" id="p9c-nJ-W3a"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -488,7 +488,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-lW-x34">
                                 <rect key="frame" x="100" y="444" width="214" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="iaA-g4-0ad"/>
+                                    <constraint firstAttribute="height" constant="40" id="IzO-zQ-ThN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
                                 <state key="normal" title="Enter">
@@ -501,18 +501,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fh9-lW-x34" firstAttribute="top" secondItem="zXy-mK-g3Z" secondAttribute="bottom" constant="40" id="0Ts-kU-JXJ"/>
-                            <constraint firstItem="zXy-mK-g3Z" firstAttribute="top" secondItem="W1h-Hi-YdL" secondAttribute="bottom" constant="40" id="4th-Fj-bub"/>
-                            <constraint firstItem="W1h-Hi-YdL" firstAttribute="top" secondItem="GcK-Cm-tqD" secondAttribute="bottom" constant="80" id="7LP-Yf-PGU"/>
-                            <constraint firstItem="GcK-Cm-tqD" firstAttribute="top" secondItem="Yh1-y8-Mts" secondAttribute="top" constant="100" id="9XH-Ng-AL2"/>
-                            <constraint firstItem="Yh1-y8-Mts" firstAttribute="trailing" secondItem="zXy-mK-g3Z" secondAttribute="trailing" constant="30" id="BDm-6j-sua"/>
-                            <constraint firstItem="Yh1-y8-Mts" firstAttribute="trailing" secondItem="W1h-Hi-YdL" secondAttribute="trailing" constant="30" id="DNr-rY-DD4"/>
-                            <constraint firstItem="Yh1-y8-Mts" firstAttribute="trailing" secondItem="GcK-Cm-tqD" secondAttribute="trailing" constant="50" id="FsG-dm-lRz"/>
-                            <constraint firstItem="fh9-lW-x34" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="100" id="Vj3-gU-KWQ"/>
-                            <constraint firstItem="fh9-lW-x34" firstAttribute="centerX" secondItem="JPB-0N-nSA" secondAttribute="centerX" id="WHi-gE-sos"/>
-                            <constraint firstItem="W1h-Hi-YdL" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="30" id="bhr-Uk-j2f"/>
-                            <constraint firstItem="zXy-mK-g3Z" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="30" id="oXK-Ra-OfX"/>
-                            <constraint firstItem="GcK-Cm-tqD" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="50" id="tdn-fe-YLy"/>
+                            <constraint firstItem="GcK-Cm-tqD" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="50" id="01P-Zm-PqR"/>
+                            <constraint firstItem="W1h-Hi-YdL" firstAttribute="top" secondItem="GcK-Cm-tqD" secondAttribute="bottom" constant="80" id="0AE-Hn-tgL"/>
+                            <constraint firstItem="fh9-lW-x34" firstAttribute="top" secondItem="zXy-mK-g3Z" secondAttribute="bottom" constant="40" id="7bJ-AX-WMS"/>
+                            <constraint firstItem="GcK-Cm-tqD" firstAttribute="top" secondItem="Yh1-y8-Mts" secondAttribute="top" constant="100" id="AEO-z4-OH5"/>
+                            <constraint firstItem="zXy-mK-g3Z" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="50" id="CUj-rE-8vv"/>
+                            <constraint firstItem="fh9-lW-x34" firstAttribute="centerX" secondItem="JPB-0N-nSA" secondAttribute="centerX" id="GLX-Ku-L76"/>
+                            <constraint firstItem="zXy-mK-g3Z" firstAttribute="centerX" secondItem="JPB-0N-nSA" secondAttribute="centerX" id="GkI-Mn-jZH"/>
+                            <constraint firstItem="GcK-Cm-tqD" firstAttribute="centerX" secondItem="JPB-0N-nSA" secondAttribute="centerX" id="LdH-35-9xB"/>
+                            <constraint firstItem="W1h-Hi-YdL" firstAttribute="centerX" secondItem="JPB-0N-nSA" secondAttribute="centerX" id="aiT-uz-E9c"/>
+                            <constraint firstItem="fh9-lW-x34" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="100" id="kYc-JR-e92"/>
+                            <constraint firstItem="zXy-mK-g3Z" firstAttribute="top" secondItem="W1h-Hi-YdL" secondAttribute="bottom" constant="40" id="oNp-Qb-xaG"/>
+                            <constraint firstItem="W1h-Hi-YdL" firstAttribute="leading" secondItem="Yh1-y8-Mts" secondAttribute="leading" constant="50" id="qab-4p-Wgy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yh1-y8-Mts"/>
                     </view>

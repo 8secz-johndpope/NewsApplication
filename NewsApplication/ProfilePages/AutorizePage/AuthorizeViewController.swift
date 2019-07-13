@@ -18,7 +18,6 @@ class AuthorizeViewController: UIViewController {
     @IBOutlet weak var passTF: UITextField!
     @IBOutlet weak var enterButtonOutlet: UIButton!
      var reference: DatabaseReference!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +25,14 @@ class AuthorizeViewController: UIViewController {
         passTF.delegate = self
         reference = Database.database().reference()
         NotificationCenter.default.addObserver(self, selector: #selector(willShowNotification(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willHideNotification(_:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(willChangeFrame(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
     override func viewWillDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardDidHideNotification, object: nil)
+//        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
         loginTF.text = ""
         passTF.text = ""
     }
@@ -37,15 +41,18 @@ class AuthorizeViewController: UIViewController {
         checkCredentials()
     }
     
+    @objc func willChangeFrame(_ notification: NSNotification) {
+       view.frame.origin.y = 0
+    }
+    
     @objc func willShowNotification(_ notification: NSNotification) {
         
         guard let userInfo = notification.userInfo else {return}
         let keyboardFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-        
-        signUpLbl.frame.origin.y -= keyboardFrame.height / 4
-        loginTF.frame.origin.y -= keyboardFrame.height / 4
-        passTF.frame.origin.y -= keyboardFrame.height / 4
-        enterButtonOutlet.frame.origin.y -= keyboardFrame.height / 4
-        
+        view.frame.origin.y -= keyboardFrame.height / 4
+    }
+    
+    @objc func willHideNotification(_ notification: NSNotification) {
+        view.frame.origin.y = 0
     }
 }
