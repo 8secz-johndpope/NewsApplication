@@ -48,8 +48,6 @@ class MethodsForSideMenu {
             Properties.shared.topView = vc.view
             uiView.addChild(vc)
         case .logout:
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "PageViewController")
             do {
                 try Auth.auth().signOut()
                 print("signed out")
